@@ -1635,3 +1635,95 @@
 [2026-05-21T11:17:51.564Z] [DEBUG]    - timestamp (ms): 1779362271563
 [2026-05-21T11:17:51.565Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
 [2026-05-21T11:17:51.566Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:18:21.567Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:18:21.568Z] [DEBUG]    - horário atual: 2026-05-21T11:18:21.567Z
+[2026-05-21T11:18:21.568Z] [DEBUG]    - timestamp (ms): 1779362301567
+[2026-05-21T11:18:21.569Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:18:21.569Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:18:51.582Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:18:51.583Z] [DEBUG]    - horário atual: 2026-05-21T11:18:51.582Z
+[2026-05-21T11:18:51.583Z] [DEBUG]    - timestamp (ms): 1779362331582
+[2026-05-21T11:18:51.584Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:18:51.584Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:19:21.596Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:19:21.597Z] [DEBUG]    - horário atual: 2026-05-21T11:19:21.596Z
+[2026-05-21T11:19:21.598Z] [DEBUG]    - timestamp (ms): 1779362361596
+[2026-05-21T11:19:21.599Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:19:21.600Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:19:51.611Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:19:51.611Z] [DEBUG]    - horário atual: 2026-05-21T11:19:51.611Z
+[2026-05-21T11:19:51.612Z] [DEBUG]    - timestamp (ms): 1779362391611
+[2026-05-21T11:19:51.613Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:19:51.613Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:20:21.615Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:20:21.616Z] [DEBUG]    - horário atual: 2026-05-21T11:20:21.615Z
+[2026-05-21T11:20:21.616Z] [DEBUG]    - timestamp (ms): 1779362421615
+[2026-05-21T11:20:21.617Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:20:21.618Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:20:51.616Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:20:51.616Z] [DEBUG]    - horário atual: 2026-05-21T11:20:51.615Z
+[2026-05-21T11:20:51.617Z] [DEBUG]    - timestamp (ms): 1779362451615
+[2026-05-21T11:20:51.618Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:20:51.618Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:21:21.617Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:21:21.617Z] [DEBUG]    - horário atual: 2026-05-21T11:21:21.617Z
+[2026-05-21T11:21:21.618Z] [DEBUG]    - timestamp (ms): 1779362481617
+[2026-05-21T11:21:21.619Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:21:21.620Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:21:51.631Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:21:51.632Z] [DEBUG]    - horário atual: 2026-05-21T11:21:51.631Z
+[2026-05-21T11:21:51.632Z] [DEBUG]    - timestamp (ms): 1779362511631
+[2026-05-21T11:21:51.633Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:21:51.633Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:22:21.632Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:22:21.632Z] [DEBUG]    - horário atual: 2026-05-21T11:22:21.632Z
+[2026-05-21T11:22:21.633Z] [DEBUG]    - timestamp (ms): 1779362541632
+[2026-05-21T11:22:21.634Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:22:21.634Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:47:11.069Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T11:47:11.071Z] [INFO] Inicializando banco de dados...
+[2026-05-21T11:47:11.073Z] [INFO] Conectado ao SQLite:
+[2026-05-21T11:47:11.077Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T11:47:11.078Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T11:47:11.078Z] [INFO] ⚙️ Coluna "category" não encontrada em photos, adicionando...
+[2026-05-21T11:47:11.081Z] [INFO] ✅ Coluna "category" adicionada com sucesso!
+[2026-05-21T11:47:11.082Z] [INFO] ⚙️ Coluna "usage_count" não encontrada em photos, adicionando...
+[2026-05-21T11:47:11.085Z] [INFO] ✅ Coluna "usage_count" adicionada com sucesso!
+[2026-05-21T11:47:11.085Z] [INFO] ⚙️ Coluna "last_used_at" não encontrada em photos, adicionando...
+[2026-05-21T11:47:11.088Z] [INFO] ✅ Coluna "last_used_at" adicionada com sucesso!
+[2026-05-21T11:47:11.089Z] [INFO] ✅ Schema atualizado com sucesso!
+[2026-05-21T11:47:11.089Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T11:47:11.091Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T11:47:11.161Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T11:47:11.162Z] [INFO] 
+[2026-05-21T11:47:11.162Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T11:47:11.163Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T11:47:11.164Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T11:47:11.164Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T11:47:11.225Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T11:47:11.225Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T11:47:11.226Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T11:47:11.229Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T11:47:11.229Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T11:47:11.230Z] [INFO] 
+[2026-05-21T11:47:11.230Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T11:47:11.230Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T11:47:11.231Z] [INFO] 
+[2026-05-21T11:47:11.231Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T11:47:11.231Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T11:47:11.232Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:47:11.232Z] [DEBUG]    - horário atual: 2026-05-21T11:47:11.232Z
+[2026-05-21T11:47:11.233Z] [DEBUG]    - timestamp (ms): 1779364031232
+[2026-05-21T11:47:11.236Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T11:47:11.237Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T11:47:11.237Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T11:47:11.238Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T11:47:11.238Z] [INFO] 💡 Ambiente: development
+[2026-05-21T11:47:11.238Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:47:11.239Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:47:15.433Z] [DEBUG] GET /api/auth/me
+[2026-05-21T11:47:15.437Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:47:15.438Z] [DEBUG] GET /api/system/status
+[2026-05-21T11:47:15.442Z] [DEBUG] GET /api/photos
+[2026-05-21T11:47:15.444Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:47:15.612Z] [DEBUG] GET /favicon.ico
