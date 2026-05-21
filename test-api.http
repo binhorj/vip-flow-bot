@@ -1,0 +1,429 @@
+### VIP FLOW BOT - Arquivo de teste das rotas
+### Use com a extensão "REST Client" do VS Code
+### https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@baseUrl = http://localhost:3000
+@token = seu_token_aqui
+
+### ===== 1. HEALTH CHECK =====
+
+GET {{baseUrl}}/health
+
+
+### ===== 2. AUTENTICAÇÃO =====
+
+### Login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@vipflow.com",
+  "password": "123456"
+}
+
+### ⚠️ Copie o token da resposta acima e coloque em @token
+
+### Pegar dados do usuário logado
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer {{token}}
+
+
+### ===== 3. FOTOS =====
+
+### Listar fotos
+GET {{baseUrl}}/api/photos
+Authorization: Bearer {{token}}
+
+### Criar foto (simula upload)
+POST {{baseUrl}}/api/photos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "filePath": "uploads/foto_teste_1.jpg",
+  "url": "http://localhost:3000/uploads/foto_teste_1.jpg"
+}
+
+### Criar segunda foto
+POST {{baseUrl}}/api/photos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "filePath": "uploads/foto_teste_2.jpg",
+  "url": "http://localhost:3000/uploads/foto_teste_2.jpg"
+}
+
+### Pegar foto específica
+### Mude o ID (1, 2, 3) se necessário
+GET {{baseUrl}}/api/photos/1
+Authorization: Bearer {{token}}
+
+### Deletar foto
+DELETE {{baseUrl}}/api/photos/1
+Authorization: Bearer {{token}}
+
+
+### ===== 4. LEGENDAS =====
+
+### Listar todas as legendas
+GET {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+
+### Listar legendas por categoria
+GET {{baseUrl}}/api/captions?category=soft
+Authorization: Bearer {{token}}
+
+### Criar legenda (soft)
+POST {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Você já conhece nosso conteúdo exclusivo?",
+  "category": "soft"
+}
+
+### Criar legenda (curiosity)
+POST {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Sabia que a maioria não sabe disso?",
+  "category": "curiosity"
+}
+
+### Criar legenda (exclusivity)
+POST {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Apenas para membros VIP...",
+  "category": "exclusivity"
+}
+
+### Criar legenda (urgency)
+POST {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Oferta válida apenas hoje!",
+  "category": "urgency"
+}
+
+### Criar legenda (CTA - Call To Action)
+POST {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Clique aqui e garanta seu acesso agora →",
+  "category": "cta"
+}
+
+### Buscar legenda específica
+GET {{baseUrl}}/api/captions/1
+Authorization: Bearer {{token}}
+
+### Atualizar legenda
+PUT {{baseUrl}}/api/captions/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Texto atualizado",
+  "category": "soft"
+}
+
+### Deletar legenda
+DELETE {{baseUrl}}/api/captions/1
+Authorization: Bearer {{token}}
+
+
+### ===== 5. CAMPANHAS =====
+
+### Listar campanhas
+GET {{baseUrl}}/api/campaigns
+Authorization: Bearer {{token}}
+
+### Criar campanha
+POST {{baseUrl}}/api/campaigns
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Promoção Verão 2026",
+  "startDate": "2026-05-21",
+  "endDate": "2026-06-21"
+}
+
+### Criar segunda campanha
+POST {{baseUrl}}/api/campaigns
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Black Friday 2026",
+  "startDate": "2026-11-01",
+  "endDate": "2026-11-30"
+}
+
+### Buscar campanha específica
+GET {{baseUrl}}/api/campaigns/1
+Authorization: Bearer {{token}}
+
+### Atualizar campanha
+PUT {{baseUrl}}/api/campaigns/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Promoção Verão - Atualizada",
+  "startDate": "2026-05-21",
+  "endDate": "2026-07-31"
+}
+
+### Mudar status da campanha (para paused)
+PATCH {{baseUrl}}/api/campaigns/1/status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "status": "paused"
+}
+
+### Mudar status da campanha (de volta para active)
+PATCH {{baseUrl}}/api/campaigns/1/status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "status": "active"
+}
+
+### Deletar campanha
+DELETE {{baseUrl}}/api/campaigns/2
+Authorization: Bearer {{token}}
+
+
+### ===== 6. AGENDAMENTOS =====
+
+### Listar agendamentos de uma campanha
+GET {{baseUrl}}/api/schedules?campaignId=1
+Authorization: Bearer {{token}}
+
+### Criar agendamento
+### ⚠️ Mude photoId (1, 2) e captionId (1, 2, 3, 4, 5) conforme seus dados
+POST {{baseUrl}}/api/schedules
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "campaignId": 1,
+  "photoId": 1,
+  "captionId": 1,
+  "link": "https://seu-link.com/oferta",
+  "scheduledAt": "2026-05-22T10:00:00"
+}
+
+### Criar segundo agendamento (amanhã às 14h)
+POST {{baseUrl}}/api/schedules
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "campaignId": 1,
+  "photoId": 2,
+  "captionId": 2,
+  "link": "https://seu-link.com/oferta",
+  "scheduledAt": "2026-05-22T14:00:00"
+}
+
+### Buscar agendamento específico
+GET {{baseUrl}}/api/schedules/1
+Authorization: Bearer {{token}}
+
+### Atualizar agendamento (mudar horário)
+PUT {{baseUrl}}/api/schedules/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "scheduledAt": "2026-05-22T15:00:00",
+  "link": "https://novo-link.com/oferta"
+}
+
+### Cancelar agendamento
+DELETE {{baseUrl}}/api/schedules/2
+Authorization: Bearer {{token}}
+
+
+### ===== 7. MÉTRICAS =====
+
+### Ver histórico de publicações
+GET {{baseUrl}}/api/metrics/history
+Authorization: Bearer {{token}}
+
+### Ver histórico com limite (últimas 10)
+GET {{baseUrl}}/api/metrics/history?limit=10&offset=0
+Authorization: Bearer {{token}}
+
+### Ver estatísticas gerais
+GET {{baseUrl}}/api/metrics/stats
+Authorization: Bearer {{token}}
+
+### Ver erros recentes
+GET {{baseUrl}}/api/metrics/errors?limit=20
+Authorization: Bearer {{token}}
+
+
+### ===== 8. TESTES DE ERRO =====
+
+### Requisição sem token (erro 401)
+GET {{baseUrl}}/api/photos
+
+### Token inválido (erro 401)
+GET {{baseUrl}}/api/photos
+Authorization: Bearer token_invalido
+
+### Email ou senha incorretos (erro 401)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@vipflow.com",
+  "password": "senhaerrada"
+}
+
+### Rota não encontrada (erro 404)
+GET {{baseUrl}}/api/rota_que_nao_existe
+
+### Dados incompletos (erro 400)
+POST {{baseUrl}}/api/captions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "text": "Texto sem categoria"
+}
+
+
+### ===== 9. TELEGRAM =====
+
+### Validar token (verificar se está correto no .env)
+GET {{baseUrl}}/api/telegram/validate
+
+### Enviar mensagem de teste
+POST {{baseUrl}}/api/telegram/test-message
+Content-Type: application/json
+
+{
+  "chatId": "-123456789",
+  "message": "✅ Teste de mensagem do VIP FLOW BOT!"
+}
+
+### Enviar foto de teste
+POST {{baseUrl}}/api/telegram/test-photo
+Content-Type: application/json
+
+{
+  "chatId": "-123456789",
+  "photoUrl": "https://via.placeholder.com/500x500",
+  "caption": "📸 Prévia liberada!\n\nConteúdo completo no VIP",
+  "link": "https://seu-link.com/oferta"
+}
+
+### Obter status do scheduler
+GET {{baseUrl}}/api/telegram/scheduler/status
+Authorization: Bearer {{token}}
+
+### Iniciar scheduler
+POST {{baseUrl}}/api/telegram/scheduler/start
+Authorization: Bearer {{token}}
+
+### Parar scheduler
+POST {{baseUrl}}/api/telegram/scheduler/stop
+Authorization: Bearer {{token}}
+
+### Executar agendamento manualmente (teste)
+POST {{baseUrl}}/api/telegram/schedule/execute
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "scheduleId": 1
+}
+
+
+### ===== 10. MARKETING (SISTEMA PROFISSIONAL) =====
+
+### Info do sistema de marketing
+GET {{baseUrl}}/api/marketing/info
+Authorization: Bearer {{token}}
+
+### Buscar legendas por estratégia
+GET {{baseUrl}}/api/marketing/captions?strategy=curiosidade&count=5
+Authorization: Bearer {{token}}
+
+### Buscar legendas: exclusividade
+GET {{baseUrl}}/api/marketing/captions?strategy=exclusividade&count=3
+Authorization: Bearer {{token}}
+
+### Buscar legendas: urgência
+GET {{baseUrl}}/api/marketing/captions?strategy=urgencia&count=3
+Authorization: Bearer {{token}}
+
+### Buscar legendas: oferta
+GET {{baseUrl}}/api/marketing/captions?strategy=oferta&count=3
+Authorization: Bearer {{token}}
+
+### Buscar legendas: novidade
+GET {{baseUrl}}/api/marketing/captions?strategy=novidade&count=3
+Authorization: Bearer {{token}}
+
+### Buscar legendas: chamada suave
+GET {{baseUrl}}/api/marketing/captions?strategy=suave&count=3
+Authorization: Bearer {{token}}
+
+### Buscar legendas: CTA direto
+GET {{baseUrl}}/api/marketing/captions?strategy=cta&count=3
+Authorization: Bearer {{token}}
+
+### Sugestões inteligentes - nível SUAVE
+GET {{baseUrl}}/api/marketing/suggestions?callLevel=suave&count=3
+Authorization: Bearer {{token}}
+
+### Sugestões inteligentes - nível MÉDIO
+GET {{baseUrl}}/api/marketing/suggestions?callLevel=medio&count=3
+Authorization: Bearer {{token}}
+
+### Sugestões inteligentes - nível DIRETO
+GET {{baseUrl}}/api/marketing/suggestions?callLevel=direto&count=3
+Authorization: Bearer {{token}}
+
+### Gerar combo automático (foto + legenda + estratégia)
+POST {{baseUrl}}/api/marketing/generate-combo
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "photoId": 1,
+  "campaignId": 1,
+  "callLevel": "medio",
+  "customLink": "https://seu-link.com/oferta"
+}
+
+### Gerar combo com estratégia específica
+POST {{baseUrl}}/api/marketing/generate-combo
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "photoId": 1,
+  "campaignId": 1,
+  "callLevel": "direto",
+  "strategy": "urgencia"
+}

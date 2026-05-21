@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP FLOW BOT - Histórico</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">🔥 VIP FLOW</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" data-page="dashboard" href="dashboard.html">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav-item" data-page="photos" href="photos.html">
+        <span class="nav-icon">📷</span>
+        <span>Fotos</span>
+      </a>
+      <a class="nav-item" data-page="campaigns" href="campaigns.html">
+        <span class="nav-icon">📢</span>
+        <span>Campanhas</span>
+      </a>
+      <a class="nav-item active" data-page="history" href="history.html">
+        <span class="nav-icon">📜</span>
+        <span>Histórico</span>
+      </a>
+      <a class="nav-item" data-page="settings" href="settings.html">
+        <span class="nav-icon">⚙️</span>
+        <span>Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <strong>Carregando...</strong>
+      </div>
+      <button class="btn btn-secondary btn-small" onclick="logout()" style="width: 100%;">
+        🚪 Sair
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="messageContainer"></div>
+
+    <div style="margin-bottom: 30px;">
+      <h1>📜 Histórico de Postagens</h1>
+      <p style="color: #6b7280; margin-top: 5px;">Acompanhe todas as publicações enviadas</p>
+    </div>
+
+    <!-- Filtros -->
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card-body">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+          <div class="form-group">
+            <label for="filterStatus" style="margin-bottom: 8px;">Status</label>
+            <select id="filterStatus">
+              <option value="">Todos</option>
+              <option value="sent">✅ Enviados</option>
+              <option value="failed">❌ Erros</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="filterDays" style="margin-bottom: 8px;">Período</label>
+            <select id="filterDays">
+              <option value="7">Últimos 7 dias</option>
+              <option value="30">Últimos 30 dias</option>
+              <option value="90">Últimos 90 dias</option>
+              <option value="all">Todo período</option>
+            </select>
+          </div>
+
+          <div style="display: flex; align-items: flex-end;">
+            <button class="btn btn-primary" onclick="loadHistory()" style="width: 100%;">
+              🔍 Filtrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estatísticas Rápidas -->
+    <div class="metrics-grid" style="margin-bottom: 20px;">
+      <div class="metric-card">
+        <div class="metric-label">Total Enviado</div>
+        <div class="metric-value" id="statTotal">-</div>
+      </div>
+
+      <div class="metric-card" style="border-left-color: #10b981;">
+        <div class="metric-label">Sucesso</div>
+        <div class="metric-value" id="statSuccess" style="color: #10b981;">-</div>
+      </div>
+
+      <div class="metric-card" style="border-left-color: #ef4444;">
+        <div class="metric-label">Erros</div>
+        <div class="metric-value" id="statErrors" style="color: #ef4444;">-</div>
+      </div>
+
+      <div class="metric-card" style="border-left-color: #f59e0b;">
+        <div class="metric-label">Taxa de Sucesso</div>
+        <div class="metric-value" id="statRate" style="color: #f59e0b;">-</div>
+      </div>
+    </div>
+
+    <!-- Tabela -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">📋 Detalhes</div>
+      </div>
+      <div class="card-body">
+        <div id="historyContainer" style="min-height: 300px; overflow-x: auto;">
+          <p style="color: #6b7280; text-align: center; padding: 40px 0;">Carregando histórico...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/helpers.js"></script>
+  <script>
+    initPage('history');
+
+    async function loadHistory() {
+      try {
+        const status = document.getElementById('filterStatus').value;
+        const days = document.getElementById('filterDays').value;
+
+        // Carregar métricas
+        const statsData = await get('/api/metrics/stats');
+        const stats = statsData.stats || {};
+
+        document.getElementById('statTotal').textContent = stats.total_sent || 0;
+        document.getElementById('statSuccess').textContent = stats.total_sent || 0;
+        document.getElementById('statErrors').textContent = stats.total_errors || 0;
+
+        const rate = stats.total_sent && stats.total_errors
+          ? Math.round((stats.total_sent / (stats.total_sent + stats.total_errors)) * 100)
+          : 0;
+        document.getElementById('statRate').textContent = rate + '%';
+
+        // Carregar histórico
+        const historyData = await get('/api/metrics/history?limit=50');
+        let items = historyData.history || [];
+
+        // Filtrar por status
+        if (status) {
+          items = items.filter(item => item.status === status);
+        }
+
+        // Filtrar por data
+        if (days !== 'all') {
+          const daysNum = parseInt(days);
+          const cutoffDate = new Date();
+          cutoffDate.setDate(cutoffDate.getDate() - daysNum);
+          items = items.filter(item => new Date(item.created_at) > cutoffDate);
+        }
+
+        const container = document.getElementById('historyContainer');
+
+        if (items.length === 0) {
+          container.innerHTML = '<p style="color: #6b7280; text-align: center; padding: 40px 0;">Nenhum registro encontrado</p>';
+          return;
+        }
+
+        let html = `
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Data/Hora</th>
+                <th>Campanha</th>
+                <th>Estratégia</th>
+                <th>Status</th>
+                <th>Mensagem</th>
+              </tr>
+            </thead>
+            <tbody>
+        `;
+
+        items.forEach(item => {
+          const strategy = item.strategy ? `${getStrategyEmoji(item.strategy)} ${item.strategy}` : '-';
+          html += `
+            <tr>
+              <td>${formatDate(item.created_at)}</td>
+              <td><strong>${truncate(item.campaign_name || '-', 25)}</strong></td>
+              <td>${strategy}</td>
+              <td>${item.status === 'sent' ? '✅ Enviado' : '❌ Erro'}</td>
+              <td><small style="color: #6b7280;">${truncate(item.error_message || 'Sucesso', 40)}</small></td>
+            </tr>
+          `;
+        });
+
+        html += '</tbody></table>';
+        container.innerHTML = html;
+      } catch (error) {
+        console.error('Erro ao carregar histórico:', error);
+        document.getElementById('historyContainer').innerHTML = '<p style="color: #ef4444;">❌ Erro ao carregar histórico</p>';
+      }
+    }
+
+    // Carregar no início
+    loadHistory();
+
+    // Recarregar a cada 60 segundos
+    setInterval(loadHistory, 60000);
+  </script>
+</body>
+</html>

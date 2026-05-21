@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP FLOW BOT - Campanhas</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">🔥 VIP FLOW</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" data-page="dashboard" href="dashboard.html">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav-item" data-page="photos" href="photos.html">
+        <span class="nav-icon">📷</span>
+        <span>Fotos</span>
+      </a>
+      <a class="nav-item active" data-page="campaigns" href="campaigns.html">
+        <span class="nav-icon">📢</span>
+        <span>Campanhas</span>
+      </a>
+      <a class="nav-item" data-page="history" href="history.html">
+        <span class="nav-icon">📜</span>
+        <span>Histórico</span>
+      </a>
+      <a class="nav-item" data-page="settings" href="settings.html">
+        <span class="nav-icon">⚙️</span>
+        <span>Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <strong>Carregando...</strong>
+      </div>
+      <button class="btn btn-secondary btn-small" onclick="logout()" style="width: 100%;">
+        🚪 Sair
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="messageContainer"></div>
+
+    <div style="margin-bottom: 30px;">
+      <h1>📢 Campanhas & Agendamentos</h1>
+      <p style="color: #6b7280; margin-top: 5px;">Crie campanhas e agende postagens automáticas</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px;">
+      <!-- Form -->
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📋 Nova Campanha</div>
+          </div>
+          <div class="card-body">
+            <form id="campaignForm">
+              <div class="form-group">
+                <label for="campaignName">Nome da Campanha</label>
+                <input type="text" id="campaignName" placeholder="Ex: Promoção Verão" required>
+              </div>
+
+              <div class="form-group">
+                <label for="campaignStart">Data de Início</label>
+                <input type="date" id="campaignStart" required>
+              </div>
+
+              <div class="form-group">
+                <label for="campaignEnd">Data de Encerramento</label>
+                <input type="date" id="campaignEnd" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                ➕ Criar Campanha
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-header">
+            <div class="card-title">⏰ Agendar Postagem</div>
+          </div>
+          <div class="card-body">
+            <form id="scheduleForm">
+              <div class="form-group">
+                <label for="scheduleCampaign">Campanha</label>
+                <select id="scheduleCampaign" required>
+                  <option value="">Carregando...</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="schedulePhoto">Foto</label>
+                <select id="schedulePhoto" required>
+                  <option value="">Carregando...</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="scheduleCaption">Legenda (Estratégia)</label>
+                <select id="scheduleCaption" required>
+                  <option value="">Selecione a estratégia</option>
+                  <option value="curiosidade">🔍 Curiosidade</option>
+                  <option value="exclusividade">👑 Exclusividade</option>
+                  <option value="urgencia">⏰ Urgência</option>
+                  <option value="oferta">💰 Oferta</option>
+                  <option value="novidade">✨ Novidade</option>
+                  <option value="suave">💝 Suave</option>
+                  <option value="cta">🎯 CTA Direto</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="scheduleCallLevel">Nível de Chamada</label>
+                <select id="scheduleCallLevel" required>
+                  <option value="medio" selected>Médio (padrão)</option>
+                  <option value="suave">Suave (audiência nova)</option>
+                  <option value="direto">Direto (conversão)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="scheduleLink">Link de Conversão</label>
+                <input type="url" id="scheduleLink" placeholder="https://seu-link.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="scheduleTime">Horário</label>
+                <input type="datetime-local" id="scheduleTime" required>
+              </div>
+
+              <button type="submit" class="btn btn-success btn-block">
+                📅 Agendar Postagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista -->
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📋 Campanhas Ativas</div>
+          </div>
+          <div class="card-body">
+            <div id="campaignsContainer" style="min-height: 300px;">
+              <p style="color: #6b7280; text-align: center; padding: 40px 0;">Carregando campanhas...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-header">
+            <div class="card-title">⏳ Agendamentos Pendentes</div>
+          </div>
+          <div class="card-body">
+            <div id="schedulesContainer" style="min-height: 300px;">
+              <p style="color: #6b7280; text-align: center; padding: 40px 0;">Carregando agendamentos...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/helpers.js"></script>
+  <script>
+    initPage('campaigns');
+
+    // Criar campanha
+    document.getElementById('campaignForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('campaignName').value;
+      const startDate = document.getElementById('campaignStart').value;
+      const endDate = document.getElementById('campaignEnd').value;
+
+      try {
+        const response = await post('/api/campaigns', {
+          name,
+          startDate,
+          endDate
+        });
+
+        if (response.success) {
+          showMessage('✅ Campanha criada com sucesso!', 'success');
+          document.getElementById('campaignForm').reset();
+          loadCampaigns();
+          loadScheduleForm();
+        } else {
+          showMessage(`❌ ${response.message}`, 'danger');
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao criar campanha', 'danger');
+      }
+    });
+
+    // Agendar postagem
+    document.getElementById('scheduleForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const campaignId = document.getElementById('scheduleCampaign').value;
+      const photoId = document.getElementById('schedulePhoto').value;
+      const strategy = document.getElementById('scheduleCaption').value;
+      const callLevel = document.getElementById('scheduleCallLevel').value;
+      const link = document.getElementById('scheduleLink').value;
+      const scheduledAt = document.getElementById('scheduleTime').value;
+
+      try {
+        console.log('📅 [SCHEDULE] Iniciando fluxo de agendamento');
+        console.log('   - campaignId:', campaignId);
+        console.log('   - photoId:', photoId);
+        console.log('   - strategy:', strategy);
+        console.log('   - callLevel:', callLevel);
+        console.log('   - link:', link);
+        console.log('   - scheduledAt:', scheduledAt);
+
+        // 1. Gerar combo inteligente
+        console.log('📅 [SCHEDULE] Chamando /api/marketing/generate-combo...');
+        const comboResponse = await post('/api/marketing/generate-combo', {
+          photoId: parseInt(photoId),
+          campaignId: parseInt(campaignId),
+          callLevel,
+          strategy,
+          customLink: link
+        });
+
+        console.log('📅 [SCHEDULE] Resposta do combo:', comboResponse);
+
+        if (!comboResponse.success) {
+          const errorMsg = comboResponse.message || 'Erro desconhecido ao gerar combo';
+          showMessage(`❌ Erro ao gerar combo: ${errorMsg}`, 'danger');
+          console.error('❌ Erro no combo:', comboResponse);
+          return;
+        }
+
+        // 2. Criar agendamento
+        const combo = comboResponse.combo;
+        console.log('📅 [SCHEDULE] Combo gerado com captionId:', combo.captionId);
+        console.log('📅 [SCHEDULE] Enviando para /api/schedules...');
+        const scheduleResponse = await post('/api/schedules', {
+          campaignId: parseInt(campaignId),
+          photoId: parseInt(photoId),
+          captionId: parseInt(combo.captionId), // Usar ID da legenda gerada pelo combo
+          link: combo.link,
+          scheduledAt
+        });
+
+        console.log('📅 [SCHEDULE] Resposta do schedule:', scheduleResponse);
+
+        if (scheduleResponse.success) {
+          showMessage('✅ Postagem agendada com sucesso!', 'success');
+          document.getElementById('scheduleForm').reset();
+          loadSchedules();
+        } else {
+          const errorMsg = scheduleResponse.message || scheduleResponse.error || 'Erro desconhecido';
+          showMessage(`❌ Erro ao agendar: ${errorMsg}`, 'danger');
+          console.error('❌ Erro no schedule:', scheduleResponse);
+        }
+      } catch (error) {
+        const errorMsg = error.message || 'Erro desconhecido';
+        showMessage(`❌ Erro ao agendar postagem: ${errorMsg}`, 'danger');
+        console.error('❌ Erro completo:', error);
+      }
+    });
+
+    // Carregar campanhas
+    async function loadCampaigns() {
+      try {
+        const data = await get('/api/campaigns');
+        const campaigns = data.campaigns || [];
+
+        const container = document.getElementById('campaignsContainer');
+
+        if (campaigns.length === 0) {
+          container.innerHTML = '<p style="color: #6b7280;">Nenhuma campanha criada ainda</p>';
+          return;
+        }
+
+        let html = '<table class="table"><thead><tr><th>Nome</th><th>Status</th><th>Ações</th></tr></thead><tbody>';
+
+        campaigns.forEach(campaign => {
+          html += `
+            <tr>
+              <td><strong>${campaign.name}</strong><br><small style="color: #6b7280;">até ${formatDate(campaign.end_date)}</small></td>
+              <td>${getStatusBadge(campaign.status)}</td>
+              <td>
+                <button class="btn btn-small" onclick="toggleCampaign(${campaign.id}, '${campaign.status}')" style="background: #3b82f6; color: white;">
+                  ${campaign.status === 'active' ? '⏸️' : '▶️'}
+                </button>
+              </td>
+            </tr>
+          `;
+        });
+
+        html += '</tbody></table>';
+        container.innerHTML = html;
+      } catch (error) {
+        console.error('Erro ao carregar campanhas:', error);
+      }
+    }
+
+    // Carregar formulário
+    async function loadScheduleForm() {
+      try {
+        // Campanhas
+        const campaignsData = await get('/api/campaigns');
+        const campaigns = campaignsData.campaigns || [];
+        const campaignSelect = document.getElementById('scheduleCampaign');
+        campaignSelect.innerHTML = '<option value="">Selecione a campanha</option>';
+        campaigns.forEach(c => {
+          campaignSelect.innerHTML += `<option value="${c.id}">${c.name}</option>`;
+        });
+
+        // Fotos
+        const photosData = await get('/api/photos');
+        const photos = photosData.photos || [];
+        const photoSelect = document.getElementById('schedulePhoto');
+        photoSelect.innerHTML = '<option value="">Selecione a foto</option>';
+        photos.forEach(p => {
+          photoSelect.innerHTML += `<option value="${p.id}">${getPhotoTypeEmoji(p.type)} ${p.type} - ID ${p.id}</option>`;
+        });
+      } catch (error) {
+        console.error('Erro ao carregar formulário:', error);
+      }
+    }
+
+    // Carregar agendamentos
+    async function loadSchedules() {
+      try {
+        const data = await get('/api/schedules');
+        const schedules = data.schedules?.filter(s => !s.is_sent) || [];
+
+        const container = document.getElementById('schedulesContainer');
+
+        if (schedules.length === 0) {
+          container.innerHTML = '<p style="color: #6b7280;">Nenhum agendamento pendente</p>';
+          return;
+        }
+
+        let html = '<table class="table"><thead><tr><th>Campanha</th><th>Agendado para</th><th>Ação</th></tr></thead><tbody>';
+
+        schedules.forEach(schedule => {
+          html += `
+            <tr>
+              <td>${truncate(schedule.campaign_name || 'Sem nome', 20)}</td>
+              <td>${formatDate(schedule.scheduled_at)}</td>
+              <td>
+                <button class="btn btn-danger btn-small" onclick="deleteSchedule(${schedule.id})">
+                  🗑️ Cancelar
+                </button>
+              </td>
+            </tr>
+          `;
+        });
+
+        html += '</tbody></table>';
+        container.innerHTML = html;
+      } catch (error) {
+        console.error('Erro ao carregar agendamentos:', error);
+      }
+    }
+
+    // Toggle campanha
+    async function toggleCampaign(campaignId, currentStatus) {
+      const newStatus = currentStatus === 'active' ? 'paused' : 'active';
+      try {
+        const response = await post(`/api/campaigns/${campaignId}/status`, {
+          status: newStatus
+        });
+        if (response.success) {
+          showMessage(`✅ Campanha ${newStatus === 'active' ? 'ativada' : 'pausada'}`, 'success');
+          loadCampaigns();
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao atualizar campanha', 'danger');
+      }
+    }
+
+    // Deletar agendamento
+    async function deleteSchedule(scheduleId) {
+      if (!confirm('Cancelar este agendamento?')) return;
+      try {
+        const response = await del(`/api/schedules/${scheduleId}`);
+        if (response.success) {
+          showMessage('✅ Agendamento cancelado', 'success');
+          loadSchedules();
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao cancelar agendamento', 'danger');
+      }
+    }
+
+    // Carregar no início
+    loadCampaigns();
+    loadScheduleForm();
+    loadSchedules();
+  </script>
+</body>
+</html>

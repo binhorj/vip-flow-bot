@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP FLOW BOT - Dashboard</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <!-- Sidebar Premium -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">🔥 VIP FLOW</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item active" data-page="dashboard" href="/pages/dashboard.html">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav-item" data-page="photos" href="/pages/photos.html">
+        <span class="nav-icon">📷</span>
+        <span>Fotos</span>
+      </a>
+      <a class="nav-item" data-page="campaigns" href="/pages/campaigns.html">
+        <span class="nav-icon">📢</span>
+        <span>Campanhas</span>
+      </a>
+      <a class="nav-item" data-page="history" href="/pages/history.html">
+        <span class="nav-icon">📜</span>
+        <span>Histórico</span>
+      </a>
+      <a class="nav-item" data-page="settings" href="/pages/settings.html">
+        <span class="nav-icon">⚙️</span>
+        <span>Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar" id="userAvatar">•</div>
+        <div class="user-details">
+          <div class="user-name" id="userName">Carregando...</div>
+          <div class="user-email" id="userEmail">Conectando...</div>
+        </div>
+      </div>
+      <button class="btn btn-secondary btn-small" onclick="logout()" style="width: 100%;">
+        🚪 Sair
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="messageContainer"></div>
+
+    <!-- Page Header -->
+    <div style="margin-bottom: 40px;">
+      <h1>📊 Dashboard</h1>
+      <p>Bem-vindo de volta! Aqui está o resumo do seu desempenho.</p>
+    </div>
+
+    <!-- Metrics Grid -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon">📢</div>
+        <div class="metric-label">Campanhas Ativas</div>
+        <div class="metric-value" id="metricCampaigns">-</div>
+        <div class="metric-change" id="metricCampaignsChange"></div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon">⏱️</div>
+        <div class="metric-label">Agendamentos Pendentes</div>
+        <div class="metric-value" id="metricSchedules">-</div>
+        <div class="metric-change" id="metricSchedulesChange"></div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon">✅</div>
+        <div class="metric-label">Enviados Hoje</div>
+        <div class="metric-value" id="metricSent">-</div>
+        <div class="metric-change" id="metricSentChange"></div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon">⚠️</div>
+        <div class="metric-label">Erros Recentes</div>
+        <div class="metric-value" id="metricErrors">-</div>
+        <div class="metric-change" id="metricErrorsChange"></div>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 40px;">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📷 Gerenciar Fotos</div>
+        </div>
+        <div class="card-body">
+          <p>Upload e organização de imagens para suas campanhas</p>
+        </div>
+        <div class="card-footer">
+          <a href="photos.html" class="btn btn-primary" style="flex: 1;">Acessar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📢 Nova Campanha</div>
+        </div>
+        <div class="card-body">
+          <p>Criar e agendar novas campanhas de marketing</p>
+        </div>
+        <div class="card-footer">
+          <a href="campaigns.html" class="btn btn-primary" style="flex: 1;">Criar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📜 Ver Histórico</div>
+        </div>
+        <div class="card-body">
+          <p>Análise completa de postagens e performance</p>
+        </div>
+        <div class="card-footer">
+          <a href="history.html" class="btn btn-primary" style="flex: 1;">Visualizar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Próximos Agendamentos -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">⏱️ Próximos Agendamentos</div>
+        <span style="font-size: 12px; color: var(--text-tertiary);" id="schedulesCount">-</span>
+      </div>
+      <div class="card-body">
+        <div id="schedulesContainer" style="min-height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-tertiary);">
+          Carregando agendamentos...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/helpers.js"></script>
+  <script>
+    // Inicializar página
+    initPage('dashboard');
+
+    // Carregar dados do dashboard
+    async function loadMetrics() {
+      try {
+        // Campanhas ativas
+        const campaigns = await get('/api/campaigns');
+        const activeCampaigns = campaigns.campaigns?.filter(c => c.status === 'active').length || 0;
+        document.getElementById('metricCampaigns').textContent = activeCampaigns;
+
+        // Agendamentos pendentes
+        const schedules = await get('/api/schedules');
+        const pendingSchedules = schedules.schedules?.filter(s => !s.is_sent).length || 0;
+        document.getElementById('metricSchedules').textContent = pendingSchedules;
+
+        // Métricas gerais
+        const metrics = await get('/api/metrics/stats');
+        document.getElementById('metricSent').textContent = metrics.stats?.sent_today || 0;
+        document.getElementById('metricErrors').textContent = metrics.stats?.errors_today || 0;
+
+        // Carregar agendamentos próximos
+        loadSchedules();
+      } catch (error) {
+        console.error('Erro ao carregar métricas:', error);
+        // Fallback: mostrar 0 se houver erro
+        document.getElementById('metricCampaigns').textContent = '0';
+        document.getElementById('metricSchedules').textContent = '0';
+        document.getElementById('metricSent').textContent = '0';
+        document.getElementById('metricErrors').textContent = '0';
+      }
+    }
+
+    // Carregar agendamentos pendentes
+    async function loadSchedules() {
+      try {
+        const data = await get('/api/schedules');
+        const schedules = data.schedules || [];
+        const pending = schedules.filter(s => !s.is_sent).slice(0, 5);
+
+        const container = document.getElementById('schedulesContainer');
+        const countEl = document.getElementById('schedulesCount');
+
+        if (pending.length === 0) {
+          container.innerHTML = '<p style="color: var(--text-tertiary); text-align: center;">Nenhum agendamento pendente</p>';
+          countEl.textContent = '0 pendentes';
+          return;
+        }
+
+        countEl.textContent = pending.length + ' próximo' + (pending.length > 1 ? 's' : '');
+
+        let html = '<table class="table"><thead><tr><th>Campanha</th><th>Agendado para</th><th>Status</th></tr></thead><tbody>';
+
+        pending.forEach(s => {
+          const date = formatDate(s.scheduled_at);
+          html += `
+            <tr>
+              <td>${truncate(s.campaign_name || 'Sem nome', 30)}</td>
+              <td>${date}</td>
+              <td>${getStatusBadge('pending')}</td>
+            </tr>
+          `;
+        });
+
+        html += '</tbody></table>';
+        container.innerHTML = html;
+      } catch (error) {
+        console.error('Erro ao carregar agendamentos:', error);
+      }
+    }
+
+    // Atualizar informações do usuário no sidebar
+    function updateUserInfo() {
+      const user = JSON.parse(localStorage.getItem('vipflow_user') || '{}');
+
+      if (user.email) {
+        const userAvatarEl = document.getElementById('userAvatar');
+        const userNameEl = document.getElementById('userName');
+        const userEmailEl = document.getElementById('userEmail');
+
+        // Gerar avatar com primeira letra do email
+        const firstLetter = user.email.charAt(0).toUpperCase();
+        userAvatarEl.textContent = firstLetter;
+
+        userNameEl.textContent = user.email.split('@')[0];
+        userEmailEl.textContent = user.email;
+      }
+    }
+
+    // Recarregar métricas a cada 30 segundos
+    updateUserInfo();
+    loadMetrics();
+    setInterval(loadMetrics, 30000);
+  </script>
+</body>
+</html>

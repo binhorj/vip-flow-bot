@@ -1,0 +1,1637 @@
+[2026-05-21T09:24:54.944Z] [WARN] ⚠️ Erros de configuração encontrados. Verifique o .env
+[2026-05-21T09:24:54.947Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:24:54.948Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:24:54.953Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:24:54.975Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:24:54.976Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:24:55.062Z] [INFO] Novo usuário criado: admin@vipflow.com
+[2026-05-21T09:24:55.062Z] [INFO] ✅ Admin criado com sucesso!
+[2026-05-21T09:24:55.063Z] [INFO]    Email: admin@vipflow.com
+[2026-05-21T09:24:55.063Z] [INFO]    ID: 1
+[2026-05-21T09:24:55.064Z] [INFO]    ⚠️ MUDE A SENHA EM PRODUÇÃO!
+[2026-05-21T09:24:55.064Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:24:55.065Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:24:55.068Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:24:55.069Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:24:55.069Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:24:55.069Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:24:55.070Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:34:46.946Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:34:46.947Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:34:46.950Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:34:46.954Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:34:46.954Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:34:46.956Z] [INFO] ✅ Admin já existe: admin@vipflow.com
+[2026-05-21T09:34:46.956Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:34:46.957Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:34:46.959Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:34:46.960Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:34:46.960Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:34:46.960Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:34:46.961Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:36:07.029Z] [ERROR] Erro na requisição: - Forbidden
+[2026-05-21T09:36:07.150Z] [DEBUG] GET /favicon.ico
+[2026-05-21T09:36:50.328Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:36:50.330Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:36:50.332Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:36:50.336Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:36:50.337Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:36:50.338Z] [INFO] ✅ Admin já existe: admin@vipflow.com
+[2026-05-21T09:36:50.339Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:36:50.339Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:36:50.342Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:36:50.342Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:36:50.343Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:36:50.343Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:36:50.343Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:38:09.421Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:38:25.534Z] [DEBUG] GET /.well-known/appspecific/com.chrome.devtools.json
+[2026-05-21T09:39:18.128Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:39:18.129Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:39:18.131Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:39:18.135Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:39:18.136Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:39:18.137Z] [INFO] ✅ Admin já existe: admin@vipflow.com
+[2026-05-21T09:39:18.137Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:39:18.138Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:39:18.140Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:39:18.141Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:39:18.141Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:39:18.142Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:39:18.142Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:39:34.626Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:39:34.664Z] [DEBUG] GET /.well-known/appspecific/com.chrome.devtools.json
+[2026-05-21T09:39:49.786Z] [DEBUG] GET /.well-known/appspecific/com.chrome.devtools.json
+[2026-05-21T09:39:50.423Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:39:50.453Z] [DEBUG] GET /.well-known/appspecific/com.chrome.devtools.json
+[2026-05-21T09:40:08.440Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:41:03.876Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:41:03.878Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:41:03.880Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:41:03.885Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:41:03.886Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:41:03.887Z] [INFO] ✅ Admin já existe: admin@vipflow.com
+[2026-05-21T09:41:03.888Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:41:03.888Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:41:03.891Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:41:03.891Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:41:03.892Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:41:03.892Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:41:03.892Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:41:20.352Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:41:21.452Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:41:57.776Z] [DEBUG] POST /api/auth/login
+[2026-05-21T09:41:57.864Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T09:42:46.229Z] [DEBUG] POST /api/auth/login
+[2026-05-21T09:42:46.294Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T09:42:54.318Z] [DEBUG] POST /api/auth/login
+[2026-05-21T09:42:54.387Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T09:43:47.235Z] [DEBUG] POST /api/auth/login
+[2026-05-21T09:43:47.306Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T09:43:47.307Z] [INFO] ✅ Login bem-sucedido: admin@vipflow.com
+[2026-05-21T09:43:48.318Z] [DEBUG] GET /dashboard.html
+[2026-05-21T09:45:18.540Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:45:18.541Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:45:18.544Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:45:18.549Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:45:18.549Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:45:18.550Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T09:45:18.624Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T09:45:18.625Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:45:18.625Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:45:18.628Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:45:18.629Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:45:18.629Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:45:18.630Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:45:18.630Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:45:28.603Z] [DEBUG] GET /api/auth/me
+[2026-05-21T09:45:28.608Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:45:28.611Z] [DEBUG] GET /api/system/status
+[2026-05-21T09:45:28.615Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:45:28.617Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:45:28.676Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:45:28.678Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:45:59.590Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:45:59.591Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:45:59.600Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:45:59.601Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:46:28.611Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:46:28.613Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:46:28.616Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:46:28.618Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:46:58.576Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:46:58.577Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:46:58.580Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:46:58.584Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:46:58.585Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:46:58.586Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T09:46:58.652Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T09:46:58.653Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:46:58.653Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:46:58.656Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:46:58.656Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:46:58.656Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:46:58.657Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:46:58.657Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:46:58.884Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:46:58.886Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:46:58.894Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:46:58.895Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:47:06.838Z] [DEBUG] GET /api/auth/me
+[2026-05-21T09:47:06.841Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:47:06.843Z] [DEBUG] GET /api/system/status
+[2026-05-21T09:47:06.847Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:47:06.849Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:47:06.910Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:47:06.912Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:47:37.598Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:47:37.600Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:47:37.604Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:47:37.605Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:48:07.593Z] [DEBUG] GET /api/campaigns
+[2026-05-21T09:48:07.594Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:48:07.598Z] [DEBUG] GET /api/schedules
+[2026-05-21T09:48:07.599Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:48:33.955Z] [DEBUG] GET /photos.html
+[2026-05-21T09:49:57.333Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:49:57.334Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:49:57.337Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:49:57.341Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:49:57.341Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:49:57.343Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T09:49:57.408Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T09:49:57.409Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:49:57.409Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:49:57.412Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:49:57.412Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:49:57.413Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:49:57.413Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:49:57.413Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:50:01.338Z] [DEBUG] GET /api/auth/me
+[2026-05-21T09:50:01.342Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:50:01.344Z] [DEBUG] GET /api/system/status
+[2026-05-21T09:50:01.347Z] [DEBUG] GET /api/photos
+[2026-05-21T09:50:01.349Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:51:23.691Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:51:23.693Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:51:23.699Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:51:23.700Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:51:25.102Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:51:25.103Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:51:25.107Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:51:25.107Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:52:09.220Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:52:09.221Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:52:09.224Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:52:09.224Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:52:29.597Z] [DEBUG] GET /.well-known/appspecific/com.chrome.devtools.json
+[2026-05-21T09:53:13.967Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:53:13.969Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:53:13.972Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:53:13.972Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:55:23.740Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:55:23.741Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:55:23.743Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:55:23.747Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:55:23.748Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:55:23.749Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T09:55:23.812Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T09:55:23.813Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:55:23.813Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:55:23.816Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:55:23.816Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:55:23.817Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:55:23.817Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:55:23.817Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:55:29.391Z] [DEBUG] GET /.well-known/appspecific/com.chrome.devtools.json
+[2026-05-21T09:55:29.434Z] [DEBUG] GET /api/auth/me
+[2026-05-21T09:55:29.439Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:29.441Z] [DEBUG] GET /api/system/status
+[2026-05-21T09:55:29.445Z] [DEBUG] GET /api/photos
+[2026-05-21T09:55:29.447Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:38.728Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:55:38.730Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:38.738Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:55:38.739Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:55:44.624Z] [DEBUG] GET /api/auth/me
+[2026-05-21T09:55:44.626Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:44.629Z] [DEBUG] GET /api/system/status
+[2026-05-21T09:55:44.631Z] [DEBUG] GET /api/photos
+[2026-05-21T09:55:44.633Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:57.196Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:55:57.197Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:57.200Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:55:57.201Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:55:58.669Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:55:58.671Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:55:58.673Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:55:58.674Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:57:04.562Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:57:04.563Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:57:04.565Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:57:04.581Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:57:04.582Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:57:04.648Z] [INFO] Novo usuário criado: admin@vipflow.com
+[2026-05-21T09:57:04.648Z] [INFO] ✅ Admin criado com sucesso!
+[2026-05-21T09:57:04.649Z] [INFO]    Email: admin@vipflow.com
+[2026-05-21T09:57:04.649Z] [INFO]    Senha: 123456
+[2026-05-21T09:57:04.649Z] [INFO]    ID: 1
+[2026-05-21T09:57:04.650Z] [INFO]    ⚠️ MUDE A SENHA EM PRODUÇÃO!
+[2026-05-21T09:57:04.650Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:57:04.650Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:57:04.653Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:57:04.653Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:57:04.654Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:57:04.654Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:57:04.654Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:58:31.264Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T09:58:31.268Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:58:31.279Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T09:58:31.280Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T09:59:39.872Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T09:59:39.873Z] [INFO] Inicializando banco de dados...
+[2026-05-21T09:59:39.876Z] [INFO] Conectado ao SQLite:
+[2026-05-21T09:59:39.880Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T09:59:39.880Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T09:59:39.881Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T09:59:39.944Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T09:59:39.944Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T09:59:39.944Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T09:59:39.947Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T09:59:39.947Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T09:59:39.948Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T09:59:39.948Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T09:59:39.948Z] [INFO] 💡 Ambiente: development
+[2026-05-21T09:59:54.727Z] [DEBUG] GET /api/auth/me
+[2026-05-21T09:59:54.731Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T09:59:54.734Z] [DEBUG] GET /api/system/status
+[2026-05-21T09:59:54.738Z] [DEBUG] GET /api/photos
+[2026-05-21T09:59:54.740Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:00:04.031Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T10:00:04.033Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:00:04.040Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T10:00:04.041Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T10:02:33.387Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:02:33.389Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:02:33.391Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:02:33.394Z] [DEBUG] GET /api/photos
+[2026-05-21T10:02:33.396Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:02:41.966Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T10:02:41.968Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:02:41.972Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T10:02:41.972Z] [ERROR] Erro ao criar foto: - SQLITE_ERROR: table photos has no column named type
+[2026-05-21T10:04:31.398Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:04:31.399Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:04:31.402Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:04:31.406Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:04:31.406Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:04:31.407Z] [INFO] ⚙️ Coluna "type" não encontrada em photos, adicionando...
+[2026-05-21T10:04:31.410Z] [INFO] ✅ Coluna "type" adicionada com sucesso!
+[2026-05-21T10:04:31.411Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:04:31.412Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:04:31.474Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:04:31.475Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:04:31.475Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:04:31.478Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:04:31.478Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:04:31.478Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:04:31.479Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:04:31.479Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:05:03.122Z] [DEBUG] POST /api/auth/login
+[2026-05-21T10:05:03.178Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T10:05:23.288Z] [DEBUG] POST /api/auth/login
+[2026-05-21T10:05:23.341Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T10:05:31.390Z] [DEBUG] POST /api/auth/login
+[2026-05-21T10:05:31.448Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T10:05:33.348Z] [DEBUG] POST /api/auth/login
+[2026-05-21T10:05:33.406Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T10:05:38.425Z] [DEBUG] POST /api/auth/login
+[2026-05-21T10:05:38.478Z] [WARN] Senha incorreta para: admin@vipflow.com
+[2026-05-21T10:09:47.236Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:09:47.237Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:09:47.240Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:09:47.244Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:09:47.245Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:09:47.246Z] [INFO] ✅ Schema atualizado - coluna "type" já existe
+[2026-05-21T10:09:47.246Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:09:47.247Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:09:47.311Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:09:47.312Z] [INFO] 
+[2026-05-21T10:09:47.312Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T10:09:47.313Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T10:09:47.313Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T10:09:47.313Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T10:09:47.368Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T10:09:47.368Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T10:09:47.368Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T10:09:47.371Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:09:47.371Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T10:09:47.371Z] [INFO] 
+[2026-05-21T10:09:47.372Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T10:09:47.372Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T10:09:47.373Z] [INFO] 
+[2026-05-21T10:09:47.373Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:09:47.373Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:09:47.376Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:09:47.376Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:09:47.377Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:09:47.377Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:09:47.377Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:10:09.504Z] [DEBUG] POST /api/auth/login
+[2026-05-21T10:10:09.506Z] [INFO] 🔐 [LOGIN] Email recebido: admin@vipflow.com
+[2026-05-21T10:10:09.506Z] [INFO] 🔐 [LOGIN] Procurando usuário: admin@vipflow.com
+[2026-05-21T10:10:09.508Z] [INFO] 🔐 [LOGIN] Usuário encontrado, ID: 1
+[2026-05-21T10:10:09.509Z] [INFO] 🔐 [LOGIN] Comparando senhas com bcrypt...
+[2026-05-21T10:10:09.571Z] [INFO] 🔐 [LOGIN] Resultado bcrypt compare: true
+[2026-05-21T10:10:09.578Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:10:09.579Z] [INFO] ✅ [LOGIN] Sucesso - Token gerado para: admin@vipflow.com
+[2026-05-21T10:10:10.239Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:10:10.242Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:10:10.244Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:10:10.246Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:10:10.249Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:10:10.289Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:10:10.291Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:10:12.508Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:10:12.509Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:10:12.510Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:10:12.511Z] [DEBUG] GET /api/photos
+[2026-05-21T10:10:12.512Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:10:38.233Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T10:10:38.234Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:10:38.244Z] [INFO] Foto criada: ID 1
+[2026-05-21T10:10:38.249Z] [DEBUG] GET /api/photos
+[2026-05-21T10:10:38.250Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:16:18.518Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:16:18.520Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:16:18.522Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:16:18.523Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:16:18.524Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:16:18.527Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:16:18.529Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:16:18.531Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:16:18.532Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:16:18.667Z] [DEBUG] GET /api/photos
+[2026-05-21T10:16:18.669Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:14.717Z] [DEBUG] POST /api/campaigns
+[2026-05-21T10:18:14.719Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:14.724Z] [INFO] Campanha criada: ID 1
+[2026-05-21T10:18:14.727Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:18:14.728Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:14.731Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:18:14.733Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:14.740Z] [DEBUG] GET /api/photos
+[2026-05-21T10:18:14.741Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:24.610Z] [DEBUG] POST /api/marketing/generate-combo
+[2026-05-21T10:18:24.612Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:24.620Z] [DEBUG] POST /api/schedules
+[2026-05-21T10:18:24.622Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:24.624Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T10:18:24.624Z] [ERROR] Erro ao criar agendamento: - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+[2026-05-21T10:18:24.625Z] [ERROR] Erro ao criar agendamento: - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+[2026-05-21T10:18:33.053Z] [DEBUG] POST /api/marketing/generate-combo
+[2026-05-21T10:18:33.055Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:33.058Z] [DEBUG] POST /api/schedules
+[2026-05-21T10:18:33.059Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:18:33.061Z] [ERROR] Erro ao executar query: - undefined
+[2026-05-21T10:18:33.061Z] [ERROR] Erro ao criar agendamento: - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+[2026-05-21T10:18:33.062Z] [ERROR] Erro ao criar agendamento: - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+[2026-05-21T10:20:39.193Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:20:39.194Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:20:39.196Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:20:39.200Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:20:39.201Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:20:39.201Z] [INFO] ✅ Schema atualizado - coluna "type" já existe
+[2026-05-21T10:20:39.202Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:20:39.202Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:20:39.265Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:20:39.265Z] [INFO] 
+[2026-05-21T10:20:39.265Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T10:20:39.266Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T10:20:39.266Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T10:20:39.267Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T10:20:39.319Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T10:20:39.320Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T10:20:39.320Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T10:20:39.322Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:20:39.322Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T10:20:39.323Z] [INFO] 
+[2026-05-21T10:20:39.323Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T10:20:39.323Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T10:20:39.324Z] [INFO] 
+[2026-05-21T10:20:39.324Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:20:39.324Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:20:39.327Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:20:39.327Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:20:39.327Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:20:39.328Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:20:39.328Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:20:44.638Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:20:44.640Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:20:44.642Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:20:44.643Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:20:44.644Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:20:44.647Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:20:44.649Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:20:44.651Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:20:44.652Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:20:44.735Z] [DEBUG] GET /api/photos
+[2026-05-21T10:20:44.736Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:21:46.245Z] [DEBUG] POST /api/marketing/generate-combo
+[2026-05-21T10:21:46.247Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:21:46.248Z] [INFO] 🎯 [GENERATE-COMBO] Iniciando geração de combo
+[2026-05-21T10:21:46.249Z] [INFO]    photoId: 1, campaignId: 1, callLevel: suave, strategy: curiosidade
+[2026-05-21T10:21:46.250Z] [INFO] 🎯 [GENERATE-COMBO] Caption gerado (curiosidade): Elite tem privilégios... você merece...
+[2026-05-21T10:21:46.254Z] [INFO] Legenda criada: ID 1
+[2026-05-21T10:21:46.254Z] [INFO] 🎯 [GENERATE-COMBO] Caption salvo no banco: ID 1
+[2026-05-21T10:21:46.255Z] [INFO] ✅ [GENERATE-COMBO] Combo gerado com sucesso (ID 1)
+[2026-05-21T10:21:46.258Z] [DEBUG] POST /api/schedules
+[2026-05-21T10:21:46.259Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:21:46.260Z] [INFO] 📅 [SCHEDULE CREATE] Payload recebido:
+[2026-05-21T10:21:46.260Z] [INFO]    - userId: 1
+[2026-05-21T10:21:46.261Z] [INFO]    - campaignId: 1
+[2026-05-21T10:21:46.261Z] [INFO]    - photoId: 1
+[2026-05-21T10:21:46.261Z] [INFO]    - captionId: 1
+[2026-05-21T10:21:46.262Z] [INFO]    - link:  https://example.com
+[2026-05-21T10:21:46.262Z] [INFO]    - scheduledAt: 2026-05-21T07:27
+[2026-05-21T10:21:46.263Z] [INFO] 📅 [SCHEDULE CREATE] Inserindo no banco...
+[2026-05-21T10:21:46.267Z] [INFO] Agendamento criado: ID 1
+[2026-05-21T10:21:46.270Z] [INFO] Métrica registrada: ID 1
+[2026-05-21T10:21:46.270Z] [INFO] ✅ [SCHEDULE CREATE] Agendamento criado: 1 para 2026-05-21T07:27
+[2026-05-21T10:21:46.274Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:21:46.275Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:28:07.565Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:28:07.567Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:28:07.570Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:28:07.575Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:28:07.576Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:28:07.577Z] [INFO] ✅ Schema atualizado - coluna "type" já existe
+[2026-05-21T10:28:07.578Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:28:07.579Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:28:07.649Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:28:07.650Z] [INFO] 
+[2026-05-21T10:28:07.651Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T10:28:07.651Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T10:28:07.652Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T10:28:07.652Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T10:28:07.714Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T10:28:07.715Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T10:28:07.715Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T10:28:07.718Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:28:07.719Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T10:28:07.719Z] [INFO] 
+[2026-05-21T10:28:07.719Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T10:28:07.720Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T10:28:07.720Z] [INFO] 
+[2026-05-21T10:28:07.721Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:28:07.721Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:28:07.722Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:28:07.722Z
+[2026-05-21T10:28:07.725Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:28:07.726Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:28:07.726Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:28:07.726Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:28:07.727Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:28:07.728Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:28:37.736Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:28:37.736Z
+[2026-05-21T10:28:37.738Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:28:46.881Z] [DEBUG] POST /api/marketing/generate-combo
+[2026-05-21T10:28:46.884Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:28:46.885Z] [INFO] 🎯 [GENERATE-COMBO] Iniciando geração de combo
+[2026-05-21T10:28:46.885Z] [INFO]    photoId: 1, campaignId: 1, callLevel: suave, strategy: curiosidade
+[2026-05-21T10:28:46.888Z] [INFO] 🎯 [GENERATE-COMBO] Caption gerado (curiosidade): Zona exclusiva liberada...
+[2026-05-21T10:28:46.892Z] [INFO] Legenda criada: ID 2
+[2026-05-21T10:28:46.893Z] [INFO] 🎯 [GENERATE-COMBO] Caption salvo no banco: ID 2
+[2026-05-21T10:28:46.893Z] [INFO] ✅ [GENERATE-COMBO] Combo gerado com sucesso (ID 2)
+[2026-05-21T10:28:46.900Z] [DEBUG] POST /api/schedules
+[2026-05-21T10:28:46.901Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:28:46.902Z] [INFO] 📅 [SCHEDULE CREATE] Payload recebido:
+[2026-05-21T10:28:46.902Z] [INFO]    - userId: 1
+[2026-05-21T10:28:46.903Z] [INFO]    - campaignId: 1
+[2026-05-21T10:28:46.903Z] [INFO]    - photoId: 1
+[2026-05-21T10:28:46.903Z] [INFO]    - captionId: 2
+[2026-05-21T10:28:46.904Z] [INFO]    - link: https://example.com
+[2026-05-21T10:28:46.904Z] [INFO]    - scheduledAt: 2026-05-21T07:33
+[2026-05-21T10:28:46.905Z] [INFO] ⏰ [SCHEDULE CREATE] Validação de data/hora:
+[2026-05-21T10:28:46.906Z] [INFO]    - scheduledAt bruto: 2026-05-21T07:33
+[2026-05-21T10:28:46.906Z] [INFO]    - scheduledDate interpretado: 2026-05-21T10:33:00.000Z
+[2026-05-21T10:28:46.907Z] [INFO]    - horário local atual: 2026-05-21T10:28:46.905Z
+[2026-05-21T10:28:46.907Z] [INFO]    - diferença (ms): 253095
+[2026-05-21T10:28:46.908Z] [INFO] 📅 [SCHEDULE CREATE] Inserindo no banco...
+[2026-05-21T10:28:46.908Z] [INFO]    - scheduledAt ISO (para DB): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:28:46.913Z] [INFO] Agendamento criado: ID 2
+[2026-05-21T10:28:46.917Z] [INFO] Métrica registrada: ID 2
+[2026-05-21T10:28:46.917Z] [INFO] ✅ [SCHEDULE CREATE] Agendamento criado: 2 para 2026-05-21T07:33
+[2026-05-21T10:28:46.921Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:28:46.923Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:29:07.751Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:29:07.751Z
+[2026-05-21T10:29:07.752Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:29:37.751Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:29:37.751Z
+[2026-05-21T10:29:37.752Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:30:07.756Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:30:07.756Z
+[2026-05-21T10:30:07.757Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:30:37.768Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:30:37.768Z
+[2026-05-21T10:30:37.769Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:31:07.782Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos - horário: 2026-05-21T10:31:07.782Z
+[2026-05-21T10:31:07.783Z] [DEBUG] 🔔 [SCHEDULER] Encontrados 0 agendamento(s) pendente(s)
+[2026-05-21T10:32:06.913Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:32:06.914Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:32:06.917Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:32:06.921Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:32:06.921Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:32:06.922Z] [INFO] ✅ Schema atualizado - coluna "type" já existe
+[2026-05-21T10:32:06.922Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:32:06.923Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:32:06.992Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:32:06.993Z] [INFO] 
+[2026-05-21T10:32:06.993Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T10:32:06.994Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T10:32:06.994Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T10:32:06.995Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T10:32:07.053Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T10:32:07.053Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T10:32:07.054Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T10:32:07.056Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:32:07.056Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T10:32:07.057Z] [INFO] 
+[2026-05-21T10:32:07.057Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T10:32:07.058Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T10:32:07.058Z] [INFO] 
+[2026-05-21T10:32:07.058Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:32:07.059Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:32:07.059Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:32:07.060Z] [DEBUG]    - horário atual: 2026-05-21T10:32:07.059Z
+[2026-05-21T10:32:07.060Z] [DEBUG]    - timestamp (ms): 1779359527059
+[2026-05-21T10:32:07.063Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:32:07.064Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:32:07.064Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:32:07.064Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:32:07.065Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:32:07.065Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:32:07.066Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 1
+[2026-05-21T10:32:07.066Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:32:07.067Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:32:07.067Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:32:07.067Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:32:07.068Z] [INFO]    - horário atual: 2026-05-21T10:32:07.059Z
+[2026-05-21T10:32:07.068Z] [INFO]    - timestamp (now): 1779359527059
+[2026-05-21T10:32:07.069Z] [INFO]    - atraso: 5min (307s)
+[2026-05-21T10:32:07.069Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:32:07.070Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:32:37.062Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:32:37.063Z] [DEBUG]    - horário atual: 2026-05-21T10:32:37.062Z
+[2026-05-21T10:32:37.064Z] [DEBUG]    - timestamp (ms): 1779359557062
+[2026-05-21T10:32:37.065Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:32:37.066Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 1
+[2026-05-21T10:32:37.066Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:32:37.066Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:32:37.067Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:32:37.067Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:32:37.067Z] [INFO]    - horário atual: 2026-05-21T10:32:37.062Z
+[2026-05-21T10:32:37.068Z] [INFO]    - timestamp (now): 1779359557062
+[2026-05-21T10:32:37.068Z] [INFO]    - atraso: 6min (337s)
+[2026-05-21T10:32:37.068Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:32:37.069Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:33:07.069Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:33:07.069Z] [DEBUG]    - horário atual: 2026-05-21T10:33:07.069Z
+[2026-05-21T10:33:07.070Z] [DEBUG]    - timestamp (ms): 1779359587069
+[2026-05-21T10:33:07.071Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:33:07.072Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:33:07.072Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:33:07.073Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:33:07.073Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:33:07.073Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:33:07.074Z] [INFO]    - horário atual: 2026-05-21T10:33:07.069Z
+[2026-05-21T10:33:07.074Z] [INFO]    - timestamp (now): 1779359587069
+[2026-05-21T10:33:07.074Z] [INFO]    - atraso: 6min (367s)
+[2026-05-21T10:33:07.075Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:33:07.075Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:33:07.075Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:33:07.076Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:33:07.076Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:33:07.076Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:33:07.077Z] [INFO]    - horário atual: 2026-05-21T10:33:07.069Z
+[2026-05-21T10:33:07.077Z] [INFO]    - timestamp (now): 1779359587069
+[2026-05-21T10:33:07.078Z] [INFO]    - atraso: 0min (7s)
+[2026-05-21T10:33:07.078Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:33:07.079Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:33:37.084Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:33:37.085Z] [DEBUG]    - horário atual: 2026-05-21T10:33:37.084Z
+[2026-05-21T10:33:37.085Z] [DEBUG]    - timestamp (ms): 1779359617084
+[2026-05-21T10:33:37.086Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:33:37.086Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:33:37.086Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:33:37.087Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:33:37.087Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:33:37.087Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:33:37.088Z] [INFO]    - horário atual: 2026-05-21T10:33:37.084Z
+[2026-05-21T10:33:37.088Z] [INFO]    - timestamp (now): 1779359617084
+[2026-05-21T10:33:37.088Z] [INFO]    - atraso: 7min (397s)
+[2026-05-21T10:33:37.089Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:33:37.089Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:33:37.089Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:33:37.089Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:33:37.090Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:33:37.090Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:33:37.090Z] [INFO]    - horário atual: 2026-05-21T10:33:37.084Z
+[2026-05-21T10:33:37.091Z] [INFO]    - timestamp (now): 1779359617084
+[2026-05-21T10:33:37.091Z] [INFO]    - atraso: 1min (37s)
+[2026-05-21T10:33:37.091Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:33:37.091Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:34:07.085Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:34:07.086Z] [DEBUG]    - horário atual: 2026-05-21T10:34:07.085Z
+[2026-05-21T10:34:07.086Z] [DEBUG]    - timestamp (ms): 1779359647085
+[2026-05-21T10:34:07.087Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:34:07.087Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:34:07.088Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:34:07.088Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:34:07.088Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:34:07.089Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:34:07.089Z] [INFO]    - horário atual: 2026-05-21T10:34:07.085Z
+[2026-05-21T10:34:07.089Z] [INFO]    - timestamp (now): 1779359647085
+[2026-05-21T10:34:07.090Z] [INFO]    - atraso: 7min (427s)
+[2026-05-21T10:34:07.090Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:34:07.090Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:34:07.091Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:34:07.091Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:34:07.091Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:34:07.091Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:34:07.092Z] [INFO]    - horário atual: 2026-05-21T10:34:07.085Z
+[2026-05-21T10:34:07.092Z] [INFO]    - timestamp (now): 1779359647085
+[2026-05-21T10:34:07.092Z] [INFO]    - atraso: 1min (67s)
+[2026-05-21T10:34:07.093Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:34:07.093Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:34:37.099Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:34:37.100Z] [DEBUG]    - horário atual: 2026-05-21T10:34:37.099Z
+[2026-05-21T10:34:37.100Z] [DEBUG]    - timestamp (ms): 1779359677099
+[2026-05-21T10:34:37.101Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:34:37.101Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:34:37.102Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:34:37.102Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:34:37.102Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:34:37.103Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:34:37.103Z] [INFO]    - horário atual: 2026-05-21T10:34:37.099Z
+[2026-05-21T10:34:37.103Z] [INFO]    - timestamp (now): 1779359677099
+[2026-05-21T10:34:37.104Z] [INFO]    - atraso: 8min (457s)
+[2026-05-21T10:34:37.104Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:34:37.105Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:34:37.105Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:34:37.106Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:34:37.106Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:34:37.107Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:34:37.107Z] [INFO]    - horário atual: 2026-05-21T10:34:37.099Z
+[2026-05-21T10:34:37.107Z] [INFO]    - timestamp (now): 1779359677099
+[2026-05-21T10:34:37.108Z] [INFO]    - atraso: 2min (97s)
+[2026-05-21T10:34:37.108Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:34:37.108Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:35:07.100Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:35:07.101Z] [DEBUG]    - horário atual: 2026-05-21T10:35:07.100Z
+[2026-05-21T10:35:07.101Z] [DEBUG]    - timestamp (ms): 1779359707100
+[2026-05-21T10:35:07.102Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:35:07.103Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:35:07.103Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:35:07.104Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:35:07.104Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:35:07.104Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:35:07.105Z] [INFO]    - horário atual: 2026-05-21T10:35:07.100Z
+[2026-05-21T10:35:07.105Z] [INFO]    - timestamp (now): 1779359707100
+[2026-05-21T10:35:07.105Z] [INFO]    - atraso: 8min (487s)
+[2026-05-21T10:35:07.106Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:35:07.106Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:35:07.106Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:35:07.107Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:35:07.107Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:35:07.108Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:35:07.108Z] [INFO]    - horário atual: 2026-05-21T10:35:07.100Z
+[2026-05-21T10:35:07.108Z] [INFO]    - timestamp (now): 1779359707100
+[2026-05-21T10:35:07.108Z] [INFO]    - atraso: 2min (127s)
+[2026-05-21T10:35:07.109Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:35:07.109Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:35:37.114Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:35:37.115Z] [DEBUG]    - horário atual: 2026-05-21T10:35:37.114Z
+[2026-05-21T10:35:37.116Z] [DEBUG]    - timestamp (ms): 1779359737114
+[2026-05-21T10:35:37.116Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:35:37.117Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:35:37.117Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:35:37.118Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:35:37.118Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:35:37.119Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:35:37.120Z] [INFO]    - horário atual: 2026-05-21T10:35:37.114Z
+[2026-05-21T10:35:37.120Z] [INFO]    - timestamp (now): 1779359737114
+[2026-05-21T10:35:37.120Z] [INFO]    - atraso: 9min (517s)
+[2026-05-21T10:35:37.121Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:35:37.121Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:35:37.122Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:35:37.122Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:35:37.122Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:35:37.123Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:35:37.123Z] [INFO]    - horário atual: 2026-05-21T10:35:37.114Z
+[2026-05-21T10:35:37.124Z] [INFO]    - timestamp (now): 1779359737114
+[2026-05-21T10:35:37.124Z] [INFO]    - atraso: 3min (157s)
+[2026-05-21T10:35:37.124Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:35:37.125Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:36:07.127Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:36:07.128Z] [DEBUG]    - horário atual: 2026-05-21T10:36:07.127Z
+[2026-05-21T10:36:07.129Z] [DEBUG]    - timestamp (ms): 1779359767127
+[2026-05-21T10:36:07.130Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:36:07.131Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:36:07.132Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:36:07.132Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:36:07.133Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:36:07.133Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:36:07.134Z] [INFO]    - horário atual: 2026-05-21T10:36:07.127Z
+[2026-05-21T10:36:07.135Z] [INFO]    - timestamp (now): 1779359767127
+[2026-05-21T10:36:07.135Z] [INFO]    - atraso: 9min (547s)
+[2026-05-21T10:36:07.136Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:36:07.136Z] [ERROR] ❌ Erro ao enviar agendamento 1: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:36:07.137Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:36:07.138Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:36:07.138Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:36:07.139Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:36:07.139Z] [INFO]    - horário atual: 2026-05-21T10:36:07.127Z
+[2026-05-21T10:36:07.140Z] [INFO]    - timestamp (now): 1779359767127
+[2026-05-21T10:36:07.141Z] [INFO]    - atraso: 3min (187s)
+[2026-05-21T10:36:07.141Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:36:07.142Z] [ERROR] ❌ Erro ao enviar agendamento 2: - TELEGRAM_CHAT_ID não configurado no .env
+[2026-05-21T10:42:18.786Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:42:18.788Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:42:18.791Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:42:18.795Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:42:18.796Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:42:18.797Z] [INFO] ✅ Schema atualizado - coluna "type" já existe
+[2026-05-21T10:42:18.797Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:42:18.798Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:42:18.870Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:42:18.871Z] [INFO] 
+[2026-05-21T10:42:18.871Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T10:42:18.872Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T10:42:18.873Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T10:42:18.873Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T10:42:18.938Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T10:42:18.938Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T10:42:18.939Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T10:42:18.941Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:42:18.942Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T10:42:18.942Z] [INFO] 
+[2026-05-21T10:42:18.943Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T10:42:18.943Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T10:42:18.944Z] [INFO] 
+[2026-05-21T10:42:18.944Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:42:18.944Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:42:18.945Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:42:18.945Z] [DEBUG]    - horário atual: 2026-05-21T10:42:18.945Z
+[2026-05-21T10:42:18.945Z] [DEBUG]    - timestamp (ms): 1779360138945
+[2026-05-21T10:42:18.949Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:42:18.949Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:42:18.950Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:42:18.950Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:42:18.950Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:42:18.951Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:42:18.951Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:42:18.952Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:42:18.952Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:42:18.952Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:42:18.953Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:42:18.953Z] [INFO]    - horário atual: 2026-05-21T10:42:18.945Z
+[2026-05-21T10:42:18.953Z] [INFO]    - timestamp (now): 1779360138945
+[2026-05-21T10:42:18.954Z] [INFO]    - atraso: 15min (919s)
+[2026-05-21T10:42:18.954Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:18.955Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:42:18.955Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:42:18.955Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:18.956Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:42:18.956Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:42:18.957Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:42:19.987Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:19.987Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:19.993Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:42:19.993Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:42:19.994Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:42:19.994Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:42:19.994Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:42:19.995Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:42:19.995Z] [INFO]    - horário atual: 2026-05-21T10:42:18.945Z
+[2026-05-21T10:42:19.995Z] [INFO]    - timestamp (now): 1779360138945
+[2026-05-21T10:42:19.996Z] [INFO]    - atraso: 9min (559s)
+[2026-05-21T10:42:19.996Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:19.996Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:42:19.997Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:42:19.997Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:19.997Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:42:19.998Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:42:19.998Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:42:20.323Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:20.323Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:20.326Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:42:20.326Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:42:48.952Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:42:48.953Z] [DEBUG]    - horário atual: 2026-05-21T10:42:48.952Z
+[2026-05-21T10:42:48.954Z] [DEBUG]    - timestamp (ms): 1779360168952
+[2026-05-21T10:42:48.955Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:42:48.956Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:42:48.956Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:42:48.957Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:42:48.957Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:42:48.958Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:42:48.958Z] [INFO]    - horário atual: 2026-05-21T10:42:48.952Z
+[2026-05-21T10:42:48.958Z] [INFO]    - timestamp (now): 1779360168952
+[2026-05-21T10:42:48.959Z] [INFO]    - atraso: 16min (949s)
+[2026-05-21T10:42:48.959Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:48.959Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:42:48.960Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:42:48.960Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:48.960Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:42:48.961Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:42:48.961Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:42:49.953Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:49.954Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:49.954Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:42:49.955Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:42:49.955Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:42:49.955Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:42:49.956Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:42:49.956Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:42:49.956Z] [INFO]    - horário atual: 2026-05-21T10:42:48.952Z
+[2026-05-21T10:42:49.956Z] [INFO]    - timestamp (now): 1779360168952
+[2026-05-21T10:42:49.957Z] [INFO]    - atraso: 10min (589s)
+[2026-05-21T10:42:49.957Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:49.957Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:42:49.958Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:42:49.958Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:42:49.958Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:42:49.959Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:42:49.959Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:42:50.288Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:50.289Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:42:50.290Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:42:50.290Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:43:18.961Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:43:18.962Z] [DEBUG]    - horário atual: 2026-05-21T10:43:18.961Z
+[2026-05-21T10:43:18.962Z] [DEBUG]    - timestamp (ms): 1779360198961
+[2026-05-21T10:43:18.963Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:43:18.964Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:43:18.965Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:43:18.966Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:43:18.966Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:43:18.967Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:43:18.967Z] [INFO]    - horário atual: 2026-05-21T10:43:18.961Z
+[2026-05-21T10:43:18.968Z] [INFO]    - timestamp (now): 1779360198961
+[2026-05-21T10:43:18.969Z] [INFO]    - atraso: 16min (979s)
+[2026-05-21T10:43:18.969Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:18.970Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:43:18.970Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:43:18.971Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:18.972Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:43:18.973Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:43:18.973Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:43:19.976Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:19.977Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:19.979Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:43:19.980Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:43:19.981Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:43:19.981Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:43:19.982Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:43:19.983Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:43:19.983Z] [INFO]    - horário atual: 2026-05-21T10:43:18.961Z
+[2026-05-21T10:43:19.984Z] [INFO]    - timestamp (now): 1779360198961
+[2026-05-21T10:43:19.985Z] [INFO]    - atraso: 10min (619s)
+[2026-05-21T10:43:19.985Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:19.986Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:43:19.986Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:43:19.987Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:19.988Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:43:19.988Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:43:19.989Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:43:20.316Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:20.316Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:20.317Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:43:20.318Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:43:48.974Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:43:48.975Z] [DEBUG]    - horário atual: 2026-05-21T10:43:48.974Z
+[2026-05-21T10:43:48.975Z] [DEBUG]    - timestamp (ms): 1779360228974
+[2026-05-21T10:43:48.976Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:43:48.977Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:43:48.977Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:43:48.978Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:43:48.978Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:43:48.979Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:43:48.979Z] [INFO]    - horário atual: 2026-05-21T10:43:48.974Z
+[2026-05-21T10:43:48.980Z] [INFO]    - timestamp (now): 1779360228974
+[2026-05-21T10:43:48.980Z] [INFO]    - atraso: 17min (1009s)
+[2026-05-21T10:43:48.980Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:48.981Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:43:48.981Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:43:48.981Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:48.982Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:43:48.982Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:43:48.983Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:43:49.750Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:49.751Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:49.752Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:43:49.752Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:43:49.753Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:43:49.753Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:43:49.754Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:43:49.754Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:43:49.754Z] [INFO]    - horário atual: 2026-05-21T10:43:48.974Z
+[2026-05-21T10:43:49.755Z] [INFO]    - timestamp (now): 1779360228974
+[2026-05-21T10:43:49.756Z] [INFO]    - atraso: 11min (649s)
+[2026-05-21T10:43:49.756Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:49.757Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:43:49.757Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:43:49.758Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:43:49.758Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:43:49.759Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:43:49.759Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:43:50.097Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:50.098Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:43:50.099Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:43:50.100Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:44:18.983Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:44:18.984Z] [DEBUG]    - horário atual: 2026-05-21T10:44:18.983Z
+[2026-05-21T10:44:18.985Z] [DEBUG]    - timestamp (ms): 1779360258983
+[2026-05-21T10:44:18.986Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:44:18.986Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:44:18.987Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:44:18.988Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:44:18.988Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:44:18.989Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:44:18.989Z] [INFO]    - horário atual: 2026-05-21T10:44:18.983Z
+[2026-05-21T10:44:18.989Z] [INFO]    - timestamp (now): 1779360258983
+[2026-05-21T10:44:18.990Z] [INFO]    - atraso: 17min (1039s)
+[2026-05-21T10:44:18.991Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:18.991Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:44:18.991Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:44:18.992Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:18.992Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:44:18.993Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:44:18.993Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:44:19.748Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:19.749Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:19.750Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:44:19.750Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:44:19.751Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:44:19.751Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:44:19.752Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:44:19.752Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:44:19.753Z] [INFO]    - horário atual: 2026-05-21T10:44:18.983Z
+[2026-05-21T10:44:19.753Z] [INFO]    - timestamp (now): 1779360258983
+[2026-05-21T10:44:19.754Z] [INFO]    - atraso: 11min (679s)
+[2026-05-21T10:44:19.754Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:19.755Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:44:19.755Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:44:19.756Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:19.757Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:44:19.757Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:44:19.758Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:44:20.085Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:20.086Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:20.087Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:44:20.088Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:44:48.986Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:44:48.987Z] [DEBUG]    - horário atual: 2026-05-21T10:44:48.986Z
+[2026-05-21T10:44:48.987Z] [DEBUG]    - timestamp (ms): 1779360288986
+[2026-05-21T10:44:48.988Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:44:48.988Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:44:48.989Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:44:48.989Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:44:48.990Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:44:48.990Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:44:48.990Z] [INFO]    - horário atual: 2026-05-21T10:44:48.986Z
+[2026-05-21T10:44:48.991Z] [INFO]    - timestamp (now): 1779360288986
+[2026-05-21T10:44:48.991Z] [INFO]    - atraso: 18min (1069s)
+[2026-05-21T10:44:48.992Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:48.992Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:44:48.993Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:44:48.993Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:48.994Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:44:48.995Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:44:48.995Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:44:49.987Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:49.987Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:49.988Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:44:49.989Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:44:49.989Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:44:49.990Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:44:49.990Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:44:49.990Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:44:49.991Z] [INFO]    - horário atual: 2026-05-21T10:44:48.986Z
+[2026-05-21T10:44:49.991Z] [INFO]    - timestamp (now): 1779360288986
+[2026-05-21T10:44:49.992Z] [INFO]    - atraso: 12min (709s)
+[2026-05-21T10:44:49.992Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:49.993Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:44:49.993Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:44:49.994Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:44:49.994Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:44:49.995Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:44:49.995Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:44:50.340Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:50.341Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:44:50.342Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:44:50.343Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:45:18.991Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:45:18.992Z] [DEBUG]    - horário atual: 2026-05-21T10:45:18.991Z
+[2026-05-21T10:45:18.992Z] [DEBUG]    - timestamp (ms): 1779360318991
+[2026-05-21T10:45:18.994Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:45:18.995Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:45:18.996Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:45:18.996Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:45:18.997Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:45:18.997Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:45:18.998Z] [INFO]    - horário atual: 2026-05-21T10:45:18.991Z
+[2026-05-21T10:45:18.998Z] [INFO]    - timestamp (now): 1779360318991
+[2026-05-21T10:45:18.999Z] [INFO]    - atraso: 18min (1099s)
+[2026-05-21T10:45:19.000Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:19.000Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:45:19.000Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:45:19.001Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:19.002Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:45:19.002Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:45:19.003Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:45:19.996Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:19.997Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:19.998Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:45:19.999Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:45:19.999Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:45:20.000Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:45:20.000Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:45:20.001Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:45:20.001Z] [INFO]    - horário atual: 2026-05-21T10:45:18.991Z
+[2026-05-21T10:45:20.002Z] [INFO]    - timestamp (now): 1779360318991
+[2026-05-21T10:45:20.002Z] [INFO]    - atraso: 12min (739s)
+[2026-05-21T10:45:20.002Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:20.003Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:45:20.003Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:45:20.004Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:20.004Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:45:20.005Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:45:20.006Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:45:20.337Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:20.338Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:20.339Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:45:20.339Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:45:49.004Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:45:49.005Z] [DEBUG]    - horário atual: 2026-05-21T10:45:49.004Z
+[2026-05-21T10:45:49.006Z] [DEBUG]    - timestamp (ms): 1779360349004
+[2026-05-21T10:45:49.007Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:45:49.008Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:45:49.008Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:45:49.009Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:45:49.009Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:45:49.010Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:45:49.011Z] [INFO]    - horário atual: 2026-05-21T10:45:49.004Z
+[2026-05-21T10:45:49.011Z] [INFO]    - timestamp (now): 1779360349004
+[2026-05-21T10:45:49.012Z] [INFO]    - atraso: 19min (1129s)
+[2026-05-21T10:45:49.012Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:49.013Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:45:49.014Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:45:49.015Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:49.015Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:45:49.015Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:45:49.016Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:45:50.034Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:50.035Z] [ERROR] ❌ Erro ao enviar agendamento 1: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:50.037Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:45:50.037Z] [ERROR] ❌ Erro ao enviar agendamento 1: - undefined
+[2026-05-21T10:45:50.037Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:45:50.038Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:45:50.038Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:45:50.039Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:45:50.039Z] [INFO]    - horário atual: 2026-05-21T10:45:49.004Z
+[2026-05-21T10:45:50.040Z] [INFO]    - timestamp (now): 1779360349004
+[2026-05-21T10:45:50.041Z] [INFO]    - atraso: 13min (769s)
+[2026-05-21T10:45:50.041Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:50.042Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:45:50.043Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:45:50.044Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:45:50.044Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:45:50.045Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:45:50.046Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:45:50.375Z] [ERROR] ❌ Erro ao enviar foto: Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:50.375Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Bad Request: wrong HTTP URL specified
+[2026-05-21T10:45:50.376Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:45:50.377Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:47:20.906Z] [INFO] 🔄 Inicializando banco de dados...
+[2026-05-21T10:47:20.908Z] [INFO] Inicializando banco de dados...
+[2026-05-21T10:47:20.911Z] [INFO] Conectado ao SQLite:
+[2026-05-21T10:47:20.915Z] [INFO] ✅ Banco de dados inicializado com sucesso!
+[2026-05-21T10:47:20.916Z] [INFO] 🔄 Verificando schema do banco de dados...
+[2026-05-21T10:47:20.917Z] [INFO] ✅ Schema atualizado - coluna "type" já existe
+[2026-05-21T10:47:20.918Z] [INFO] 🔄 Verificando usuário admin...
+[2026-05-21T10:47:20.919Z] [INFO] 🔄 TEST_MODE ativo - resetando senha do admin para: admin123
+[2026-05-21T10:47:20.992Z] [INFO] ✅ Senha do admin resetada com sucesso!
+[2026-05-21T10:47:20.993Z] [INFO] 
+[2026-05-21T10:47:20.993Z] [INFO] 🔐 ========== TESTANDO AUTENTICAÇÃO ==========
+[2026-05-21T10:47:20.994Z] [INFO] 🔐 [TEST] 1. Buscando usuário: admin@vipflow.com
+[2026-05-21T10:47:20.995Z] [INFO] 🔐 [TEST] ✅ Usuário encontrado (ID: 1)
+[2026-05-21T10:47:20.995Z] [INFO] 🔐 [TEST] 2. Validando senha...
+[2026-05-21T10:47:21.056Z] [INFO] 🔐 [TEST] Resultado bcrypt.compare(): true
+[2026-05-21T10:47:21.057Z] [INFO] 🔐 [TEST] ✅ Senha válida
+[2026-05-21T10:47:21.057Z] [INFO] 🔐 [TEST] 3. Gerando JWT...
+[2026-05-21T10:47:21.060Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T10:47:21.060Z] [INFO] 🔐 [TEST] ✅ JWT gerado com sucesso
+[2026-05-21T10:47:21.061Z] [INFO] 
+[2026-05-21T10:47:21.061Z] [INFO] ✅ ========== AUTENTICAÇÃO OK ==========
+[2026-05-21T10:47:21.062Z] [INFO] ✅ Login pronto: admin@vipflow.com / admin123
+[2026-05-21T10:47:21.062Z] [INFO] 
+[2026-05-21T10:47:21.062Z] [INFO] 🔄 Iniciando scheduler de agendamentos...
+[2026-05-21T10:47:21.063Z] [INFO] 🚀 Scheduler iniciado - verificando agendamentos a cada 30s
+[2026-05-21T10:47:21.063Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:47:21.064Z] [DEBUG]    - horário atual: 2026-05-21T10:47:21.063Z
+[2026-05-21T10:47:21.064Z] [DEBUG]    - timestamp (ms): 1779360441063
+[2026-05-21T10:47:21.068Z] [INFO] ✅ Servidor iniciado na porta 3000
+[2026-05-21T10:47:21.068Z] [INFO] 📝 Health check: http://localhost:3000/health
+[2026-05-21T10:47:21.069Z] [INFO] 🔐 Login: POST http://localhost:3000/api/auth/login
+[2026-05-21T10:47:21.069Z] [INFO] 📱 Telegram: POST http://localhost:3000/api/telegram/test-message
+[2026-05-21T10:47:21.070Z] [INFO] 💡 Ambiente: development
+[2026-05-21T10:47:21.070Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 2
+[2026-05-21T10:47:21.071Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 2
+[2026-05-21T10:47:21.071Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 1:
+[2026-05-21T10:47:21.071Z] [INFO]    - scheduled_at (bruto): "2026-05-21T07:27"
+[2026-05-21T10:47:21.072Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:27:00.000Z
+[2026-05-21T10:47:21.072Z] [INFO]    - timestamp (scheduled): 1779359220000
+[2026-05-21T10:47:21.073Z] [INFO]    - horário atual: 2026-05-21T10:47:21.063Z
+[2026-05-21T10:47:21.073Z] [INFO]    - timestamp (now): 1779360441063
+[2026-05-21T10:47:21.073Z] [INFO]    - atraso: 20min (1221s)
+[2026-05-21T10:47:21.074Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:21.074Z] [INFO] 🧪 TESTE Enviando agendamento ID 1:
+[2026-05-21T10:47:21.074Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:47:21.075Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:21.075Z] [INFO]    - caption: "Elite tem privilégios... você merece..."
+[2026-05-21T10:47:21.075Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Elite tem privilégios... você merece
+[2026-05-21T10:47:21.076Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:47:21.077Z] [INFO] 📸 Tipo de imagem: LOCAL (arquivo) | URL: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:21.077Z] [INFO] 📂 Caminho local resolvido: C:\Users\fabri\OneDrive\Documentos\Claude\Projects\bot bubu telegram adulto\public\uploads\1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:21.078Z] [INFO] ✅ Arquivo existe e será enviado
+[2026-05-21T10:47:24.095Z] [INFO] ✅ Foto enviada (arquivo local): chat -5252600889
+[2026-05-21T10:47:24.099Z] [INFO] Métrica atualizada: schedule_id 1
+[2026-05-21T10:47:24.100Z] [INFO] 🧪 TESTE Agendamento 1 enviado com sucesso
+[2026-05-21T10:47:24.104Z] [INFO] Agendamento marcado como enviado: ID 1
+[2026-05-21T10:47:24.104Z] [INFO] ✅ 🧪 TESTE Agendamento 1 enviado com sucesso!
+[2026-05-21T10:47:24.105Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:47:24.105Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:47:24.106Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:47:24.106Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:47:24.106Z] [INFO]    - horário atual: 2026-05-21T10:47:21.063Z
+[2026-05-21T10:47:24.107Z] [INFO]    - timestamp (now): 1779360441063
+[2026-05-21T10:47:24.107Z] [INFO]    - atraso: 14min (861s)
+[2026-05-21T10:47:24.108Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:24.108Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:47:24.108Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:47:24.109Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:24.109Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:47:24.110Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:47:24.110Z] [WARN] ⏳ Anti-spam: aguardando 30s antes de enviar
+[2026-05-21T10:47:24.111Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Aguarde 30s antes de enviar próxima mensagem
+[2026-05-21T10:47:24.114Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:47:24.114Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:47:51.076Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:47:51.076Z] [DEBUG]    - horário atual: 2026-05-21T10:47:51.076Z
+[2026-05-21T10:47:51.077Z] [DEBUG]    - timestamp (ms): 1779360471076
+[2026-05-21T10:47:51.078Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 1
+[2026-05-21T10:47:51.079Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 1
+[2026-05-21T10:47:51.079Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:47:51.079Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:47:51.080Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:47:51.080Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:47:51.081Z] [INFO]    - horário atual: 2026-05-21T10:47:51.076Z
+[2026-05-21T10:47:51.081Z] [INFO]    - timestamp (now): 1779360471076
+[2026-05-21T10:47:51.081Z] [INFO]    - atraso: 15min (891s)
+[2026-05-21T10:47:51.082Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:51.082Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:47:51.082Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:47:51.083Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:47:51.084Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:47:51.084Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:47:51.084Z] [WARN] ⏳ Anti-spam: aguardando 4s antes de enviar
+[2026-05-21T10:47:51.085Z] [ERROR] ❌ Erro ao enviar agendamento 2: - Aguarde 4s antes de enviar próxima mensagem
+[2026-05-21T10:47:51.089Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:47:51.089Z] [ERROR] ❌ Erro ao enviar agendamento 2: - undefined
+[2026-05-21T10:48:21.088Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:48:21.089Z] [DEBUG]    - horário atual: 2026-05-21T10:48:21.088Z
+[2026-05-21T10:48:21.090Z] [DEBUG]    - timestamp (ms): 1779360501088
+[2026-05-21T10:48:21.091Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 1
+[2026-05-21T10:48:21.091Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 1
+[2026-05-21T10:48:21.092Z] [INFO] 🔔 [SCHEDULER] Processando agendamento 2:
+[2026-05-21T10:48:21.092Z] [INFO]    - scheduled_at (bruto): "2026-05-21T10:33:00.000Z"
+[2026-05-21T10:48:21.092Z] [INFO]    - scheduled_at (interpretado): 2026-05-21T10:33:00.000Z
+[2026-05-21T10:48:21.093Z] [INFO]    - timestamp (scheduled): 1779359580000
+[2026-05-21T10:48:21.093Z] [INFO]    - horário atual: 2026-05-21T10:48:21.088Z
+[2026-05-21T10:48:21.094Z] [INFO]    - timestamp (now): 1779360501088
+[2026-05-21T10:48:21.094Z] [INFO]    - atraso: 15min (921s)
+[2026-05-21T10:48:21.094Z] [INFO]    - foto: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:48:21.095Z] [INFO] 🧪 TESTE Enviando agendamento ID 2:
+[2026-05-21T10:48:21.096Z] [INFO]    - chat_id: -5252600889
+[2026-05-21T10:48:21.096Z] [INFO]    - photo_url: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:48:21.097Z] [INFO]    - caption: "Zona exclusiva liberada..."
+[2026-05-21T10:48:21.097Z] [INFO] 🧪 TESTE | Chat: -5252600889 | Legenda: Zona exclusiva liberada
+[2026-05-21T10:48:21.097Z] [DEBUG] Enviando foto para chat -5252600889
+[2026-05-21T10:48:21.098Z] [INFO] 📸 Tipo de imagem: LOCAL (arquivo) | URL: http://localhost:3000/uploads/1779358238237-ih396yca3.jpeg
+[2026-05-21T10:48:21.098Z] [INFO] 📂 Caminho local resolvido: C:\Users\fabri\OneDrive\Documentos\Claude\Projects\bot bubu telegram adulto\public\uploads\1779358238237-ih396yca3.jpeg
+[2026-05-21T10:48:21.099Z] [INFO] ✅ Arquivo existe e será enviado
+[2026-05-21T10:48:22.857Z] [INFO] ✅ Foto enviada (arquivo local): chat -5252600889
+[2026-05-21T10:48:22.861Z] [INFO] Métrica atualizada: schedule_id 2
+[2026-05-21T10:48:22.862Z] [INFO] 🧪 TESTE Agendamento 2 enviado com sucesso
+[2026-05-21T10:48:22.866Z] [INFO] Agendamento marcado como enviado: ID 2
+[2026-05-21T10:48:22.867Z] [INFO] ✅ 🧪 TESTE Agendamento 2 enviado com sucesso!
+[2026-05-21T10:48:51.098Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:48:51.099Z] [DEBUG]    - horário atual: 2026-05-21T10:48:51.098Z
+[2026-05-21T10:48:51.100Z] [DEBUG]    - timestamp (ms): 1779360531098
+[2026-05-21T10:48:51.100Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:48:51.101Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:49:21.104Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:49:21.104Z] [DEBUG]    - horário atual: 2026-05-21T10:49:21.104Z
+[2026-05-21T10:49:21.105Z] [DEBUG]    - timestamp (ms): 1779360561104
+[2026-05-21T10:49:21.106Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:49:21.106Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:49:51.108Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:49:51.110Z] [DEBUG]    - horário atual: 2026-05-21T10:49:51.108Z
+[2026-05-21T10:49:51.111Z] [DEBUG]    - timestamp (ms): 1779360591108
+[2026-05-21T10:49:51.112Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:49:51.113Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:50:21.109Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:50:21.109Z] [DEBUG]    - horário atual: 2026-05-21T10:50:21.109Z
+[2026-05-21T10:50:21.110Z] [DEBUG]    - timestamp (ms): 1779360621109
+[2026-05-21T10:50:21.111Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:50:21.111Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:50:51.117Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:50:51.118Z] [DEBUG]    - horário atual: 2026-05-21T10:50:51.117Z
+[2026-05-21T10:50:51.119Z] [DEBUG]    - timestamp (ms): 1779360651117
+[2026-05-21T10:50:51.120Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:50:51.120Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:51:21.119Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:51:21.120Z] [DEBUG]    - horário atual: 2026-05-21T10:51:21.119Z
+[2026-05-21T10:51:21.120Z] [DEBUG]    - timestamp (ms): 1779360681119
+[2026-05-21T10:51:21.122Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:51:21.122Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:51:51.123Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:51:51.124Z] [DEBUG]    - horário atual: 2026-05-21T10:51:51.123Z
+[2026-05-21T10:51:51.124Z] [DEBUG]    - timestamp (ms): 1779360711123
+[2026-05-21T10:51:51.126Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:51:51.127Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:52:21.124Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:52:21.125Z] [DEBUG]    - horário atual: 2026-05-21T10:52:21.124Z
+[2026-05-21T10:52:21.126Z] [DEBUG]    - timestamp (ms): 1779360741124
+[2026-05-21T10:52:21.127Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:52:21.128Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:52:51.130Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:52:51.131Z] [DEBUG]    - horário atual: 2026-05-21T10:52:51.130Z
+[2026-05-21T10:52:51.132Z] [DEBUG]    - timestamp (ms): 1779360771130
+[2026-05-21T10:52:51.133Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:52:51.134Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:53:21.142Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:53:21.143Z] [DEBUG]    - horário atual: 2026-05-21T10:53:21.142Z
+[2026-05-21T10:53:21.144Z] [DEBUG]    - timestamp (ms): 1779360801142
+[2026-05-21T10:53:21.144Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:53:21.145Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:53:51.145Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:53:51.146Z] [DEBUG]    - horário atual: 2026-05-21T10:53:51.145Z
+[2026-05-21T10:53:51.147Z] [DEBUG]    - timestamp (ms): 1779360831145
+[2026-05-21T10:53:51.147Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:53:51.148Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:53:53.279Z] [DEBUG] POST /api/campaigns
+[2026-05-21T10:53:53.281Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:53:53.287Z] [INFO] Campanha criada: ID 2
+[2026-05-21T10:53:53.292Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:53:53.295Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:53:53.301Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:53:53.303Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:53:53.307Z] [DEBUG] GET /api/photos
+[2026-05-21T10:53:53.309Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:53:58.426Z] [DEBUG] POST /api/campaigns/2/status
+[2026-05-21T10:53:58.428Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:08.824Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:54:08.826Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:08.827Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:54:08.830Z] [DEBUG] GET /api/photos
+[2026-05-21T10:54:08.833Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:21.154Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:54:21.155Z] [DEBUG]    - horário atual: 2026-05-21T10:54:21.154Z
+[2026-05-21T10:54:21.155Z] [DEBUG]    - timestamp (ms): 1779360861154
+[2026-05-21T10:54:21.156Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:54:21.156Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:54:21.615Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T10:54:21.617Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:21.628Z] [INFO] Foto criada: ID 2
+[2026-05-21T10:54:21.632Z] [DEBUG] GET /api/photos
+[2026-05-21T10:54:21.634Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:32.444Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T10:54:32.445Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:32.453Z] [INFO] Foto criada: ID 3
+[2026-05-21T10:54:32.456Z] [DEBUG] GET /api/photos
+[2026-05-21T10:54:32.457Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:49.442Z] [DEBUG] POST /api/photos/upload
+[2026-05-21T10:54:49.444Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:49.449Z] [INFO] Foto criada: ID 4
+[2026-05-21T10:54:49.452Z] [DEBUG] GET /api/photos
+[2026-05-21T10:54:49.454Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:51.166Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:54:51.166Z] [DEBUG]    - horário atual: 2026-05-21T10:54:51.166Z
+[2026-05-21T10:54:51.167Z] [DEBUG]    - timestamp (ms): 1779360891166
+[2026-05-21T10:54:51.167Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:54:51.168Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:54:53.911Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:54:53.914Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:53.915Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:54:53.918Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:54:53.920Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:53.922Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:54:53.924Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:53.932Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:54:53.934Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:54:53.962Z] [DEBUG] GET /api/photos
+[2026-05-21T10:54:53.964Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:55:21.169Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:55:21.170Z] [DEBUG]    - horário atual: 2026-05-21T10:55:21.169Z
+[2026-05-21T10:55:21.171Z] [DEBUG]    - timestamp (ms): 1779360921169
+[2026-05-21T10:55:21.171Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:55:21.172Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:55:51.173Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:55:51.174Z] [DEBUG]    - horário atual: 2026-05-21T10:55:51.173Z
+[2026-05-21T10:55:51.175Z] [DEBUG]    - timestamp (ms): 1779360951173
+[2026-05-21T10:55:51.176Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:55:51.177Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:56:06.184Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:56:06.186Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:06.188Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:56:06.190Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:56:06.192Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:06.248Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:56:06.250Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:08.653Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:56:08.655Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:08.656Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:56:08.658Z] [DEBUG] GET /api/photos
+[2026-05-21T10:56:08.660Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:15.936Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:56:15.938Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:15.940Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:56:15.943Z] [DEBUG] GET /api/metrics/stats
+[2026-05-21T10:56:15.944Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:15.973Z] [DEBUG] GET /api/metrics/history
+[2026-05-21T10:56:15.975Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:18.632Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:56:18.635Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:18.636Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:56:18.637Z] [DEBUG] GET /health
+[2026-05-21T10:56:18.672Z] [DEBUG] GET /api/telegram/validate
+[2026-05-21T10:56:20.526Z] [DEBUG] GET /api/auth/me
+[2026-05-21T10:56:20.528Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:20.529Z] [DEBUG] GET /api/system/status
+[2026-05-21T10:56:20.531Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:56:20.533Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:20.535Z] [DEBUG] GET /api/schedules
+[2026-05-21T10:56:20.537Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:20.539Z] [DEBUG] GET /api/campaigns
+[2026-05-21T10:56:20.541Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:20.590Z] [DEBUG] GET /api/photos
+[2026-05-21T10:56:20.592Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T10:56:21.182Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:56:21.183Z] [DEBUG]    - horário atual: 2026-05-21T10:56:21.182Z
+[2026-05-21T10:56:21.184Z] [DEBUG]    - timestamp (ms): 1779360981182
+[2026-05-21T10:56:21.185Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:56:21.185Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:56:51.193Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:56:51.194Z] [DEBUG]    - horário atual: 2026-05-21T10:56:51.193Z
+[2026-05-21T10:56:51.194Z] [DEBUG]    - timestamp (ms): 1779361011193
+[2026-05-21T10:56:51.195Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:56:51.196Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:57:21.202Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:57:21.203Z] [DEBUG]    - horário atual: 2026-05-21T10:57:21.202Z
+[2026-05-21T10:57:21.203Z] [DEBUG]    - timestamp (ms): 1779361041202
+[2026-05-21T10:57:21.204Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:57:21.205Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:57:51.209Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:57:51.210Z] [DEBUG]    - horário atual: 2026-05-21T10:57:51.209Z
+[2026-05-21T10:57:51.210Z] [DEBUG]    - timestamp (ms): 1779361071209
+[2026-05-21T10:57:51.211Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:57:51.212Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:58:21.223Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:58:21.224Z] [DEBUG]    - horário atual: 2026-05-21T10:58:21.223Z
+[2026-05-21T10:58:21.224Z] [DEBUG]    - timestamp (ms): 1779361101223
+[2026-05-21T10:58:21.225Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:58:21.226Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:58:51.228Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:58:51.229Z] [DEBUG]    - horário atual: 2026-05-21T10:58:51.228Z
+[2026-05-21T10:58:51.230Z] [DEBUG]    - timestamp (ms): 1779361131228
+[2026-05-21T10:58:51.230Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:58:51.231Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:59:21.231Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:59:21.232Z] [DEBUG]    - horário atual: 2026-05-21T10:59:21.231Z
+[2026-05-21T10:59:21.232Z] [DEBUG]    - timestamp (ms): 1779361161231
+[2026-05-21T10:59:21.233Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:59:21.233Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T10:59:51.232Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T10:59:51.232Z] [DEBUG]    - horário atual: 2026-05-21T10:59:51.232Z
+[2026-05-21T10:59:51.233Z] [DEBUG]    - timestamp (ms): 1779361191232
+[2026-05-21T10:59:51.234Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T10:59:51.234Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:00:21.245Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:00:21.246Z] [DEBUG]    - horário atual: 2026-05-21T11:00:21.245Z
+[2026-05-21T11:00:21.247Z] [DEBUG]    - timestamp (ms): 1779361221245
+[2026-05-21T11:00:21.248Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:00:21.248Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:00:51.250Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:00:51.251Z] [DEBUG]    - horário atual: 2026-05-21T11:00:51.250Z
+[2026-05-21T11:00:51.252Z] [DEBUG]    - timestamp (ms): 1779361251250
+[2026-05-21T11:00:51.253Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:00:51.253Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:01:21.262Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:01:21.263Z] [DEBUG]    - horário atual: 2026-05-21T11:01:21.262Z
+[2026-05-21T11:01:21.264Z] [DEBUG]    - timestamp (ms): 1779361281262
+[2026-05-21T11:01:21.265Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:01:21.266Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:01:51.263Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:01:51.264Z] [DEBUG]    - horário atual: 2026-05-21T11:01:51.263Z
+[2026-05-21T11:01:51.264Z] [DEBUG]    - timestamp (ms): 1779361311263
+[2026-05-21T11:01:51.265Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:01:51.266Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:02:21.277Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:02:21.278Z] [DEBUG]    - horário atual: 2026-05-21T11:02:21.277Z
+[2026-05-21T11:02:21.278Z] [DEBUG]    - timestamp (ms): 1779361341277
+[2026-05-21T11:02:21.279Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:02:21.280Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:02:51.293Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:02:51.294Z] [DEBUG]    - horário atual: 2026-05-21T11:02:51.293Z
+[2026-05-21T11:02:51.294Z] [DEBUG]    - timestamp (ms): 1779361371293
+[2026-05-21T11:02:51.295Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:02:51.296Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:03:21.305Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:03:21.306Z] [DEBUG]    - horário atual: 2026-05-21T11:03:21.305Z
+[2026-05-21T11:03:21.306Z] [DEBUG]    - timestamp (ms): 1779361401305
+[2026-05-21T11:03:21.307Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:03:21.307Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:03:51.319Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:03:51.320Z] [DEBUG]    - horário atual: 2026-05-21T11:03:51.319Z
+[2026-05-21T11:03:51.320Z] [DEBUG]    - timestamp (ms): 1779361431319
+[2026-05-21T11:03:51.321Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:03:51.322Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:04:21.320Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:04:21.320Z] [DEBUG]    - horário atual: 2026-05-21T11:04:21.320Z
+[2026-05-21T11:04:21.321Z] [DEBUG]    - timestamp (ms): 1779361461320
+[2026-05-21T11:04:21.322Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:04:21.323Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:04:51.323Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:04:51.323Z] [DEBUG]    - horário atual: 2026-05-21T11:04:51.323Z
+[2026-05-21T11:04:51.324Z] [DEBUG]    - timestamp (ms): 1779361491323
+[2026-05-21T11:04:51.325Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:04:51.326Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:05:21.332Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:05:21.333Z] [DEBUG]    - horário atual: 2026-05-21T11:05:21.332Z
+[2026-05-21T11:05:21.334Z] [DEBUG]    - timestamp (ms): 1779361521332
+[2026-05-21T11:05:21.335Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:05:21.335Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:05:51.338Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:05:51.339Z] [DEBUG]    - horário atual: 2026-05-21T11:05:51.338Z
+[2026-05-21T11:05:51.339Z] [DEBUG]    - timestamp (ms): 1779361551338
+[2026-05-21T11:05:51.340Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:05:51.340Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:06:21.344Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:06:21.345Z] [DEBUG]    - horário atual: 2026-05-21T11:06:21.344Z
+[2026-05-21T11:06:21.345Z] [DEBUG]    - timestamp (ms): 1779361581344
+[2026-05-21T11:06:21.346Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:06:21.347Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:06:48.343Z] [DEBUG] POST /api/auth/login
+[2026-05-21T11:06:48.345Z] [INFO] 🔐 [LOGIN] Email recebido: admin@vipflow.com
+[2026-05-21T11:06:48.345Z] [INFO] 🔐 [LOGIN] Procurando usuário: admin@vipflow.com
+[2026-05-21T11:06:48.346Z] [INFO] 🔐 [LOGIN] Usuário encontrado, ID: 1
+[2026-05-21T11:06:48.346Z] [INFO] 🔐 [LOGIN] Comparando senhas com bcrypt...
+[2026-05-21T11:06:48.413Z] [INFO] 🔐 [LOGIN] Resultado bcrypt compare: true
+[2026-05-21T11:06:48.419Z] [INFO] Token gerado para usuário ID: 1
+[2026-05-21T11:06:48.420Z] [INFO] ✅ [LOGIN] Sucesso - Token gerado para: admin@vipflow.com
+[2026-05-21T11:06:49.080Z] [DEBUG] GET /api/auth/me
+[2026-05-21T11:06:49.082Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:06:49.083Z] [DEBUG] GET /api/system/status
+[2026-05-21T11:06:49.085Z] [DEBUG] GET /api/campaigns
+[2026-05-21T11:06:49.086Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:06:49.152Z] [DEBUG] GET /api/schedules
+[2026-05-21T11:06:49.154Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:06:51.351Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:06:51.352Z] [DEBUG]    - horário atual: 2026-05-21T11:06:51.351Z
+[2026-05-21T11:06:51.352Z] [DEBUG]    - timestamp (ms): 1779361611351
+[2026-05-21T11:06:51.353Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:06:51.354Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:07:19.593Z] [DEBUG] GET /api/campaigns
+[2026-05-21T11:07:19.595Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:19.599Z] [DEBUG] GET /api/schedules
+[2026-05-21T11:07:19.601Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:21.367Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:07:21.368Z] [DEBUG]    - horário atual: 2026-05-21T11:07:21.367Z
+[2026-05-21T11:07:21.368Z] [DEBUG]    - timestamp (ms): 1779361641367
+[2026-05-21T11:07:21.369Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:07:21.369Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:07:45.858Z] [DEBUG] GET /api/auth/me
+[2026-05-21T11:07:45.860Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:45.862Z] [DEBUG] GET /api/system/status
+[2026-05-21T11:07:45.863Z] [DEBUG] GET /api/campaigns
+[2026-05-21T11:07:45.865Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:45.867Z] [DEBUG] GET /api/schedules
+[2026-05-21T11:07:45.869Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:45.871Z] [DEBUG] GET /api/campaigns
+[2026-05-21T11:07:45.873Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:45.941Z] [DEBUG] GET /api/photos
+[2026-05-21T11:07:45.942Z] [DEBUG] Usuário autenticado: 1
+[2026-05-21T11:07:51.373Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:07:51.374Z] [DEBUG]    - horário atual: 2026-05-21T11:07:51.373Z
+[2026-05-21T11:07:51.375Z] [DEBUG]    - timestamp (ms): 1779361671373
+[2026-05-21T11:07:51.376Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:07:51.376Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:08:21.388Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:08:21.389Z] [DEBUG]    - horário atual: 2026-05-21T11:08:21.388Z
+[2026-05-21T11:08:21.389Z] [DEBUG]    - timestamp (ms): 1779361701388
+[2026-05-21T11:08:21.391Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:08:21.391Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:08:51.400Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:08:51.401Z] [DEBUG]    - horário atual: 2026-05-21T11:08:51.400Z
+[2026-05-21T11:08:51.402Z] [DEBUG]    - timestamp (ms): 1779361731400
+[2026-05-21T11:08:51.402Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:08:51.403Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:09:21.414Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:09:21.414Z] [DEBUG]    - horário atual: 2026-05-21T11:09:21.414Z
+[2026-05-21T11:09:21.415Z] [DEBUG]    - timestamp (ms): 1779361761414
+[2026-05-21T11:09:21.416Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:09:21.416Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:09:51.425Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:09:51.426Z] [DEBUG]    - horário atual: 2026-05-21T11:09:51.425Z
+[2026-05-21T11:09:51.427Z] [DEBUG]    - timestamp (ms): 1779361791425
+[2026-05-21T11:09:51.428Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:09:51.428Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:10:21.441Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:10:21.442Z] [DEBUG]    - horário atual: 2026-05-21T11:10:21.441Z
+[2026-05-21T11:10:21.442Z] [DEBUG]    - timestamp (ms): 1779361821441
+[2026-05-21T11:10:21.444Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:10:21.444Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:10:51.448Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:10:51.449Z] [DEBUG]    - horário atual: 2026-05-21T11:10:51.448Z
+[2026-05-21T11:10:51.449Z] [DEBUG]    - timestamp (ms): 1779361851448
+[2026-05-21T11:10:51.450Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:10:51.451Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:11:21.457Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:11:21.458Z] [DEBUG]    - horário atual: 2026-05-21T11:11:21.457Z
+[2026-05-21T11:11:21.459Z] [DEBUG]    - timestamp (ms): 1779361881457
+[2026-05-21T11:11:21.460Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:11:21.460Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:11:51.457Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:11:51.458Z] [DEBUG]    - horário atual: 2026-05-21T11:11:51.457Z
+[2026-05-21T11:11:51.459Z] [DEBUG]    - timestamp (ms): 1779361911457
+[2026-05-21T11:11:51.460Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:11:51.460Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:12:21.471Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:12:21.472Z] [DEBUG]    - horário atual: 2026-05-21T11:12:21.471Z
+[2026-05-21T11:12:21.472Z] [DEBUG]    - timestamp (ms): 1779361941471
+[2026-05-21T11:12:21.473Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:12:21.473Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:12:51.475Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:12:51.475Z] [DEBUG]    - horário atual: 2026-05-21T11:12:51.475Z
+[2026-05-21T11:12:51.476Z] [DEBUG]    - timestamp (ms): 1779361971475
+[2026-05-21T11:12:51.477Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:12:51.477Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:13:21.481Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:13:21.482Z] [DEBUG]    - horário atual: 2026-05-21T11:13:21.481Z
+[2026-05-21T11:13:21.482Z] [DEBUG]    - timestamp (ms): 1779362001481
+[2026-05-21T11:13:21.483Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:13:21.483Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:13:51.494Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:13:51.495Z] [DEBUG]    - horário atual: 2026-05-21T11:13:51.494Z
+[2026-05-21T11:13:51.495Z] [DEBUG]    - timestamp (ms): 1779362031494
+[2026-05-21T11:13:51.496Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:13:51.497Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:14:21.498Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:14:21.499Z] [DEBUG]    - horário atual: 2026-05-21T11:14:21.498Z
+[2026-05-21T11:14:21.500Z] [DEBUG]    - timestamp (ms): 1779362061498
+[2026-05-21T11:14:21.501Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:14:21.501Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:14:51.508Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:14:51.509Z] [DEBUG]    - horário atual: 2026-05-21T11:14:51.508Z
+[2026-05-21T11:14:51.510Z] [DEBUG]    - timestamp (ms): 1779362091508
+[2026-05-21T11:14:51.511Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:14:51.512Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:15:21.523Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:15:21.523Z] [DEBUG]    - horário atual: 2026-05-21T11:15:21.523Z
+[2026-05-21T11:15:21.524Z] [DEBUG]    - timestamp (ms): 1779362121523
+[2026-05-21T11:15:21.525Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:15:21.525Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:15:51.533Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:15:51.534Z] [DEBUG]    - horário atual: 2026-05-21T11:15:51.533Z
+[2026-05-21T11:15:51.534Z] [DEBUG]    - timestamp (ms): 1779362151533
+[2026-05-21T11:15:51.535Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:15:51.536Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:16:21.539Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:16:21.540Z] [DEBUG]    - horário atual: 2026-05-21T11:16:21.539Z
+[2026-05-21T11:16:21.540Z] [DEBUG]    - timestamp (ms): 1779362181539
+[2026-05-21T11:16:21.541Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:16:21.541Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:16:51.547Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:16:51.548Z] [DEBUG]    - horário atual: 2026-05-21T11:16:51.547Z
+[2026-05-21T11:16:51.548Z] [DEBUG]    - timestamp (ms): 1779362211547
+[2026-05-21T11:16:51.550Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:16:51.550Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:17:21.551Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:17:21.551Z] [DEBUG]    - horário atual: 2026-05-21T11:17:21.551Z
+[2026-05-21T11:17:21.552Z] [DEBUG]    - timestamp (ms): 1779362241551
+[2026-05-21T11:17:21.553Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:17:21.554Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0
+[2026-05-21T11:17:51.563Z] [DEBUG] 🔔 [SCHEDULER] Verificando agendamentos
+[2026-05-21T11:17:51.564Z] [DEBUG]    - horário atual: 2026-05-21T11:17:51.563Z
+[2026-05-21T11:17:51.564Z] [DEBUG]    - timestamp (ms): 1779362271563
+[2026-05-21T11:17:51.565Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos não-enviados no banco: 0
+[2026-05-21T11:17:51.566Z] [DEBUG] 🔔 [SCHEDULER] Agendamentos com data <= agora: 0

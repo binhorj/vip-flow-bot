@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP FLOW BOT - Fotos</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">🔥 VIP FLOW</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" data-page="dashboard" href="/pages/dashboard.html">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav-item active" data-page="photos" href="/pages/photos.html">
+        <span class="nav-icon">📷</span>
+        <span>Fotos</span>
+      </a>
+      <a class="nav-item" data-page="campaigns" href="/pages/campaigns.html">
+        <span class="nav-icon">📢</span>
+        <span>Campanhas</span>
+      </a>
+      <a class="nav-item" data-page="history" href="/pages/history.html">
+        <span class="nav-icon">📜</span>
+        <span>Histórico</span>
+      </a>
+      <a class="nav-item" data-page="settings" href="/pages/settings.html">
+        <span class="nav-icon">⚙️</span>
+        <span>Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <strong>Carregando...</strong>
+      </div>
+      <button class="btn btn-secondary btn-small" onclick="logout()" style="width: 100%;">
+        🚪 Sair
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="messageContainer"></div>
+
+    <div style="margin-bottom: 30px;">
+      <h1>📷 Gerenciar Fotos</h1>
+      <p style="color: #6b7280; margin-top: 5px;">Upload e organização de imagens para campanhas</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px;">
+      <!-- Form -->
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📤 Upload de Foto</div>
+          </div>
+          <div class="card-body">
+            <form id="uploadForm">
+              <div class="form-group">
+                <label for="photoInput">Selecionar Imagens (até 50)</label>
+                <input type="file" id="photoInput" name="images" accept="image/jpeg,image/png,image/webp,image/gif" multiple required>
+                <p style="font-size: 11px; color: #6b7280; margin-top: 5px;">Dica: Selecione múltiplas imagens de uma vez</p>
+              </div>
+
+              <div id="previewContainer" style="display: none;">
+                <p style="font-size: 12px; margin-bottom: 8px; color: #6b7280;">Previews (<span id="previewCount">0</span>):</p>
+                <div id="previewGrid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px;"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="photoType">Tipo de Foto</label>
+                <select id="photoType" required>
+                  <option value="">Selecione o tipo</option>
+                  <option value="previa">👀 Prévia</option>
+                  <option value="destaque">⭐ Destaque</option>
+                  <option value="oferta">🎁 Oferta</option>
+                  <option value="novidade">🆕 Novidade</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="photoCategory">Categoria (Variedade)</label>
+                <select id="photoCategory">
+                  <option value="preview">👀 Preview</option>
+                  <option value="destaque">⭐ Destaque</option>
+                  <option value="lifestyle">🌟 Lifestyle</option>
+                  <option value="vip">👑 VIP</option>
+                </select>
+              </div>
+
+              <div id="progressContainer" style="display: none; margin-bottom: 12px;">
+                <p id="progressText" style="font-size: 12px; margin-bottom: 6px; color: #6b7280;">Enviando 1 de 5...</p>
+                <div style="width: 100%; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden;">
+                  <div id="progressBar" style="height: 100%; background: #3b82f6; width: 0%; transition: width 0.3s ease;"></div>
+                </div>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                ☁️ Enviar Fotos
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista -->
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📸 Suas Fotos</div>
+          </div>
+          <div class="card-body">
+            <div id="photosContainer" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+              <p style="color: #6b7280;">Carregando fotos...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/helpers.js"></script>
+  <script>
+    // Inicializar página (sidebar, user info, etc)
+    initPage('photos');
+
+    // ===== UPLOAD SIMPLES E ROBUSTO =====
+    document.addEventListener('DOMContentLoaded', function() {
+      const uploadForm = document.getElementById('uploadForm');
+      const photoInput = document.getElementById('photoInput');
+      const photoType = document.getElementById('photoType');
+      const photoCategory = document.getElementById('photoCategory');
+      const previewContainer = document.getElementById('previewContainer');
+      const previewGrid = document.getElementById('previewGrid');
+      const previewCount = document.getElementById('previewCount');
+      const progressContainer = document.getElementById('progressContainer');
+      const progressText = document.getElementById('progressText');
+      const progressBar = document.getElementById('progressBar');
+      const submitBtn = document.getElementById('submitBtn');
+
+      // Preview de múltiplas imagens
+      photoInput.addEventListener('change', function(e) {
+        const files = Array.from(this.files);
+
+        if (files.length === 0) {
+          previewContainer.style.display = 'none';
+          return;
+        }
+
+        // Limitar a 50 imagens
+        if (files.length > 50) {
+          showMessage('⚠️ Máximo 50 imagens por envio. Selecionadas: ' + files.length, 'warning');
+          return;
+        }
+
+        previewGrid.innerHTML = '';
+        previewCount.textContent = files.length;
+
+        files.forEach((file, index) => {
+          const reader = new FileReader();
+          reader.onload = function(event) {
+            const preview = document.createElement('div');
+            preview.style.cssText = 'position: relative; overflow: hidden; border-radius: 6px; aspect-ratio: 1;';
+            preview.innerHTML = `
+              <img src="${event.target.result}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <span style="position: absolute; top: 2px; right: 2px; background: rgba(0,0,0,0.6); color: white; font-size: 11px; padding: 2px 6px; border-radius: 3px;">${index + 1}</span>
+            `;
+            previewGrid.appendChild(preview);
+          };
+          reader.readAsDataURL(file);
+        });
+
+        previewContainer.style.display = 'block';
+      });
+
+      // Envio do formulário (suporta múltiplas imagens)
+      uploadForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const files = Array.from(photoInput.files);
+        const type = photoType.value;
+        const category = photoCategory.value;
+
+        // Validação básica
+        if (files.length === 0) {
+          showMessage('❌ Selecione pelo menos uma imagem', 'danger');
+          return;
+        }
+
+        if (files.length > 50) {
+          showMessage('❌ Máximo 50 imagens por envio', 'danger');
+          return;
+        }
+
+        if (!type) {
+          showMessage('❌ Selecione o tipo de foto', 'danger');
+          return;
+        }
+
+        try {
+          progressContainer.style.display = 'block';
+          submitBtn.disabled = true;
+
+          // Criar FormData com múltiplas imagens
+          const formData = new FormData();
+          files.forEach(file => {
+            formData.append('images', file);
+          });
+          formData.append('type', type);
+          formData.append('category', category);
+
+          // Enviar para API
+          const token = localStorage.getItem('vipflow_token');
+
+          // Atualizar progresso durante upload
+          const xhr = new XMLHttpRequest();
+          let lastProgress = 0;
+
+          xhr.upload.addEventListener('progress', (e) => {
+            if (e.lengthComputable) {
+              const percentComplete = (e.loaded / e.total) * 100;
+              progressBar.style.width = percentComplete + '%';
+              progressText.textContent = `Enviando ${files.length} imagem(s)... ${Math.round(percentComplete)}%`;
+            }
+          });
+
+          xhr.addEventListener('load', async () => {
+            try {
+              const data = JSON.parse(xhr.responseText);
+
+              if (xhr.status !== 201 && xhr.status !== 200) {
+                throw new Error(data.message || 'Erro ao enviar fotos');
+              }
+
+              // Sucesso
+              const uploaded = data.uploaded || 0;
+              const failed = data.failed || 0;
+              const totalMsg = uploaded > 0 ? `✅ ${uploaded} enviada(s) com sucesso!` : '';
+              const errorMsg = failed > 0 ? ` ⚠️ ${failed} com erro` : '';
+
+              showMessage(totalMsg + errorMsg, uploaded > 0 ? 'success' : 'danger');
+
+              // Reset
+              uploadForm.reset();
+              previewContainer.style.display = 'none';
+              progressContainer.style.display = 'none';
+              loadPhotos();
+
+            } catch (error) {
+              showMessage(`❌ ${error.message}`, 'danger');
+            } finally {
+              submitBtn.disabled = false;
+            }
+          });
+
+          xhr.addEventListener('error', () => {
+            showMessage('❌ Erro na conexão', 'danger');
+            progressContainer.style.display = 'none';
+            submitBtn.disabled = false;
+          });
+
+          xhr.open('POST', 'http://localhost:3000/api/photos/upload');
+          xhr.setRequestHeader('Authorization', `Bearer ${token}`);
+          xhr.send(formData);
+
+        } catch (error) {
+          console.error('Erro ao fazer upload:', error);
+          showMessage(`❌ ${error.message}`, 'danger');
+          progressContainer.style.display = 'none';
+          submitBtn.disabled = false;
+        }
+      });
+    });
+
+    // ===== CARREGAR E EXIBIR FOTOS =====
+    async function loadPhotos() {
+      try {
+        const token = localStorage.getItem('vipflow_token');
+        const response = await fetch('http://localhost:3000/api/photos', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+
+        const data = await response.json();
+        const photos = data.photos || [];
+        const container = document.getElementById('photosContainer');
+
+        if (photos.length === 0) {
+          container.innerHTML = '<p style="color: #6b7280; text-align: center; padding: 40px 0;">Nenhuma foto enviada ainda</p>';
+          return;
+        }
+
+        let html = '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px;">';
+
+        photos.forEach(photo => {
+          const typeEmoji = getPhotoTypeEmoji(photo.type || 'previa');
+          const categoryEmoji = getCategoryEmoji(photo.category || 'preview');
+          const usageCount = photo.usage_count || 0;
+          const usageLabel = usageCount > 0 ? `Usada ${usageCount}x` : 'Não usada';
+
+          html += `
+            <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+              <img src="${photo.url}" style="width: 100%; height: 150px; object-fit: cover; display: block;">
+              <div style="padding: 10px; background: white;">
+                <p style="font-size: 11px; color: #6b7280; margin-bottom: 4px;">${typeEmoji} ${photo.type || 'previa'}</p>
+                <p style="font-size: 11px; color: #6b7280; margin-bottom: 4px;">${categoryEmoji} ${photo.category || 'preview'}</p>
+                <p style="font-size: 11px; color: #059669; margin-bottom: 8px;">📊 ${usageLabel}</p>
+                <button type="button" class="btn btn-danger btn-small" onclick="deletePhoto(${photo.id})" style="width: 100%;">🗑️ Deletar</button>
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+        container.innerHTML = html;
+      } catch (error) {
+        console.error('Erro ao carregar fotos:', error);
+        document.getElementById('photosContainer').innerHTML = '<p style="color: #ef4444;">❌ Erro ao carregar fotos</p>';
+      }
+    }
+
+    // ===== DELETAR FOTO =====
+    async function deletePhoto(photoId) {
+      if (!confirm('Tem certeza? Essa ação não pode ser desfeita.')) return;
+
+      try {
+        showLoading(true);
+        const token = localStorage.getItem('vipflow_token');
+        const response = await fetch(`http://localhost:3000/api/photos/${photoId}`, {
+          method: 'DELETE',
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.message || 'Erro ao deletar');
+        }
+
+        showMessage('✅ Foto deletada', 'success');
+        loadPhotos();
+      } catch (error) {
+        showMessage(`❌ ${error.message}`, 'danger');
+      } finally {
+        showLoading(false);
+      }
+    }
+
+    // Helper para emoji de categoria
+    function getCategoryEmoji(category) {
+      const categoryMap = {
+        'preview': '👀',
+        'destaque': '⭐',
+        'lifestyle': '🌟',
+        'vip': '👑'
+      };
+      return categoryMap[category] || '👀';
+    }
+
+    // Carregar fotos ao abrir a página
+    loadPhotos();
+  </script>
+</body>
+</html>

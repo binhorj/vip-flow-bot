@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP FLOW BOT - Login</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <style>
+    .login-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    }
+
+    .login-card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .login-logo {
+      font-size: 36px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+
+    .login-subtitle {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      margin-bottom: 15px;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .remember-me input {
+      width: auto;
+      margin: 0;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .login-message {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .error {
+      color: #ef4444;
+    }
+
+    .success {
+      color: #10b981;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-logo">🔥 VIP FLOW</div>
+        <p class="login-subtitle">Sistema de Automação Profissional</p>
+      </div>
+
+      <div id="messageContainer"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="admin@vipflow.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Sua senha"
+            required
+          >
+        </div>
+
+        <div class="remember-me">
+          <input type="checkbox" id="rememberMe" name="rememberMe">
+          <label for="rememberMe" style="margin: 0; font-weight: 400;">Lembrar de mim</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-login">
+          Entrar
+        </button>
+      </form>
+
+      <p class="login-message">
+        📧 Email: <strong>admin@vipflow.com</strong><br>
+        🔑 Senha: <strong>admin123</strong>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:3000';
+
+    // Verificar se já está logado
+    function checkAuth() {
+      const token = localStorage.getItem('vipflow_token');
+      if (token) {
+        window.location.href = '/pages/dashboard.html';
+      }
+    }
+
+    // AUTO-LOGIN PARA TESTES (remover depois)
+    async function autoLogin() {
+      try {
+        const response = await fetch(`${API_URL}/api/auth/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: 'admin@vipflow.com',
+            password: 'admin123'
+          })
+        });
+        const data = await response.json();
+        if (data.success) {
+          localStorage.setItem('vipflow_token', data.token);
+          localStorage.setItem('vipflow_email', 'admin@vipflow.com');
+          setTimeout(() => {
+            window.location.href = '/pages/dashboard.html';
+          }, 500);
+        }
+      } catch (error) {
+        console.error('Auto-login error:', error);
+      }
+    }
+
+    // Mostrar mensagem
+    function showMessage(text, type) {
+      const container = document.getElementById('messageContainer');
+      container.innerHTML = `<div class="alert alert-${type}">${text}</div>`;
+      setTimeout(() => {
+        container.innerHTML = '';
+      }, 5000);
+    }
+
+    // Login
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const rememberMe = document.getElementById('rememberMe').checked;
+
+      try {
+        const response = await fetch(`${API_URL}/api/auth/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          localStorage.setItem('vipflow_token', data.token);
+          if (rememberMe) {
+            localStorage.setItem('vipflow_email', email);
+          }
+          showMessage('✅ Login realizado com sucesso!', 'success');
+          setTimeout(() => {
+            window.location.href = 'dashboard.html';
+          }, 1000);
+        } else {
+          showMessage(`❌ ${data.message}`, 'danger');
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao conectar com servidor', 'danger');
+        console.error('Erro:', error);
+      }
+    });
+
+    // Carregar email salvo
+    function loadRememberedEmail() {
+      const email = localStorage.getItem('vipflow_email');
+      if (email) {
+        document.getElementById('email').value = email;
+        document.getElementById('rememberMe').checked = true;
+      }
+    }
+
+    // Inicializar
+    // AUTO-LOGIN PARA TESTES - REMOVER DEPOIS
+    autoLogin();
+
+    // checkAuth();
+    // loadRememberedEmail();
+  </script>
+</body>
+</html>

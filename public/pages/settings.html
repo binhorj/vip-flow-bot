@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP FLOW BOT - Configurações</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">🔥 VIP FLOW</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" data-page="dashboard" href="dashboard.html">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav-item" data-page="photos" href="photos.html">
+        <span class="nav-icon">📷</span>
+        <span>Fotos</span>
+      </a>
+      <a class="nav-item" data-page="campaigns" href="campaigns.html">
+        <span class="nav-icon">📢</span>
+        <span>Campanhas</span>
+      </a>
+      <a class="nav-item" data-page="history" href="history.html">
+        <span class="nav-icon">📜</span>
+        <span>Histórico</span>
+      </a>
+      <a class="nav-item active" data-page="settings" href="settings.html">
+        <span class="nav-icon">⚙️</span>
+        <span>Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <strong>Carregando...</strong>
+      </div>
+      <button class="btn btn-secondary btn-small" onclick="logout()" style="width: 100%;">
+        🚪 Sair
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="messageContainer"></div>
+
+    <div style="margin-bottom: 30px;">
+      <h1>⚙️ Configurações do Sistema</h1>
+      <p style="color: #6b7280; margin-top: 5px;">Status e informações do servidor</p>
+    </div>
+
+    <!-- Status do Sistema -->
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card-header">
+        <div class="card-title">🔧 Status do Sistema</div>
+      </div>
+      <div class="card-body">
+        <div id="statusContainer" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+          <div style="padding: 15px; background: var(--gray-light); border-radius: 8px;">
+            <p style="color: #6b7280; font-size: 12px; margin-bottom: 5px;">API Status</p>
+            <p style="font-weight: bold; font-size: 16px;" id="apiStatus">Verificando...</p>
+          </div>
+
+          <div style="padding: 15px; background: var(--gray-light); border-radius: 8px;">
+            <p style="color: #6b7280; font-size: 12px; margin-bottom: 5px;">Telegram Bot</p>
+            <p style="font-weight: bold; font-size: 16px;" id="telegramStatus">Verificando...</p>
+          </div>
+
+          <div style="padding: 15px; background: var(--gray-light); border-radius: 8px;">
+            <p style="color: #6b7280; font-size: 12px; margin-bottom: 5px;">Scheduler</p>
+            <p style="font-weight: bold; font-size: 16px;" id="schedulerStatus">Verificando...</p>
+          </div>
+
+          <div style="padding: 15px; background: var(--gray-light); border-radius: 8px;">
+            <p style="color: #6b7280; font-size: 12px; margin-bottom: 5px;">Banco de Dados</p>
+            <p style="font-weight: bold; font-size: 16px;" id="databaseStatus">Verificando...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ações do Scheduler -->
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card-header">
+        <div class="card-title">⏱️ Controle do Scheduler</div>
+      </div>
+      <div class="card-body">
+        <p style="color: #6b7280; margin-bottom: 20px;">Inicie ou pare o scheduler de postagens automáticas</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+          <button class="btn btn-success" onclick="startScheduler()" style="width: 100%;">
+            ▶️ Iniciar Scheduler
+          </button>
+          <button class="btn btn-warning" onclick="stopScheduler()" style="width: 100%; background: #f59e0b;">
+            ⏸️ Parar Scheduler
+          </button>
+          <button class="btn btn-info" onclick="testScheduler()" style="width: 100%; background: #3b82f6;">
+            🧪 Testar (Executar Agora)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Informações -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">ℹ️ Informações do Sistema</div>
+      </div>
+      <div class="card-body">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px; font-weight: 600; width: 200px;">Versão da API</td>
+            <td style="padding: 12px;" id="infoVersion">-</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px; font-weight: 600;">Ambiente</td>
+            <td style="padding: 12px;" id="infoEnv">-</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px; font-weight: 600;">Porta</td>
+            <td style="padding: 12px;">3000</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px; font-weight: 600;">Node.js</td>
+            <td style="padding: 12px;" id="infoNode">-</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; font-weight: 600;">Última Atualização</td>
+            <td style="padding: 12px;" id="infoLastCheck">Agora</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/helpers.js"></script>
+  <script>
+    initPage('settings');
+
+    async function checkSystemStatus() {
+      try {
+        // Health check
+        const health = await fetch('http://localhost:3000/health').then(r => r.json());
+
+        if (health.success) {
+          document.getElementById('apiStatus').innerHTML = '✅ Online';
+          document.getElementById('schedulerStatus').innerHTML = health.schedulerStatus?.running ? '✅ Ativo' : '⏸️ Parado';
+        } else {
+          document.getElementById('apiStatus').innerHTML = '❌ Offline';
+        }
+
+        // Telegram
+        try {
+          const telegramCheck = await get('/api/telegram/validate');
+          document.getElementById('telegramStatus').innerHTML = telegramCheck.success ? '✅ Conectado' : '❌ Desconectado';
+        } catch {
+          document.getElementById('telegramStatus').innerHTML = '❌ Erro';
+        }
+
+        document.getElementById('databaseStatus').innerHTML = '✅ Conectado';
+        document.getElementById('infoLastCheck').textContent = new Date().toLocaleTimeString('pt-BR');
+      } catch (error) {
+        console.error('Erro ao verificar status:', error);
+        document.getElementById('apiStatus').innerHTML = '❌ Erro';
+      }
+    }
+
+    async function startScheduler() {
+      try {
+        const response = await post('/api/telegram/scheduler/start', {});
+        if (response.success) {
+          showMessage('✅ Scheduler iniciado!', 'success');
+          setTimeout(checkSystemStatus, 1000);
+        } else {
+          showMessage('❌ Erro ao iniciar scheduler', 'danger');
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao conectar', 'danger');
+      }
+    }
+
+    async function stopScheduler() {
+      if (!confirm('Tem certeza? Isso interromperá os agendamentos automáticos.')) return;
+
+      try {
+        const response = await post('/api/telegram/scheduler/stop', {});
+        if (response.success) {
+          showMessage('⏸️ Scheduler parado!', 'warning');
+          setTimeout(checkSystemStatus, 1000);
+        } else {
+          showMessage('❌ Erro ao parar scheduler', 'danger');
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao conectar', 'danger');
+      }
+    }
+
+    async function testScheduler() {
+      try {
+        showMessage('🧪 Testando scheduler... (isso pode levar alguns segundos)', 'info', 0);
+        const response = await post('/api/telegram/scheduler/start', {});
+
+        if (response.success) {
+          showMessage('✅ Scheduler iniciado! Próximas postagens serão executadas em 30 segundos.', 'success');
+        } else {
+          showMessage('❌ Erro ao testar', 'danger');
+        }
+      } catch (error) {
+        showMessage('❌ Erro ao conectar', 'danger');
+      }
+    }
+
+    // Inicializar
+    checkSystemStatus();
+
+    // Verificar status a cada 30 segundos
+    setInterval(checkSystemStatus, 30000);
+  </script>
+</body>
+</html>
